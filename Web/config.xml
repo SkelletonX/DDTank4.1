@@ -2,9 +2,9 @@
 <root>
   <config>
     <FLASHSITE value="http://127.0.0.1/flash/" />
-    <BACKUP_FLASHSITE value="http:///127.0.0.1/flash/" />
+    <BACKUP_FLASHSITE value="http://127.0.0.1/flash/" />
     <USE_MD5 value="False" />
-    <SITE value="http://res2-ddt.ddtankbr.com.br/" />
+    <SITE value="https://res.ddtankbrasil.com.br/" />
     <FIRSTPAGE value="http://127.0.0.1/" />
     <REGISTER value="http://127.0.0.1/" />
     <REQUEST_PATH value="http://127.0.0.1/request/" />

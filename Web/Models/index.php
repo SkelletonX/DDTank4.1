@@ -1,5 +1,5 @@
 <?php
-$thispath = "D:\\SKELLETONX\\DDTank\\TrueTank\\site\\Models\\";
+$thispath = "E:\\SKELLETONX\\GITHUB\\DDTank4.1\\Web\\Models\\";
 $diretorio = dir($thispath);
 
 while($arquivo = $diretorio -> read()){
