@@ -1,0 +1,41 @@
+.ac-ul {
+	padding-top: 5px;
+}
+.ac-ul li{
+	float: left;
+	width: 100%;
+	border-bottom: 1px dashed #f9e5d9;
+	padding: 22px 0 24px;
+}
+.ac-ul li img{
+	float: left;
+	width: 226px;
+	height: 106px;
+	border: 1px solid #f28a1a;
+	padding: 1px;
+}
+.ac-ul-rgt{
+	width: 382px;
+}
+.acTit-text{
+	font: bold 16px/24px 微软雅黑,宋体;
+	color: #ff620d;
+}
+.acTit-text span{
+	font: normal 12px/24px 宋体;
+}
+.ac-ul-rgt p{
+	color: #5a5a5a;
+	padding: 5px 0 7px;
+	line-height: 24px;
+}
+.ac-ul-rgt a{
+	display: block;
+	width: 82px;
+	height: 27px;
+	line-height: 27px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/minIcon.png) no-repeat -198px -45px;
+}

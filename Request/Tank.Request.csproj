@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5722B731-DC47-4DEE-9A3D-65FED82BE5E6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tank.Request</RootNamespace>
+    <AssemblyName>Tank.Request</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>-Microsoft.Design#CA2210;-Microsoft.Globalization#CA1305;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax, Version=5.6.3.4, Culture=neutral, PublicKeyToken=4e09e408349270f3">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheckRegistration.ashx" />
+    <Content Include="AccountRegister.ashx" />
+    <Content Include="AdvanceQuestionRead.ashx" />
+    <Content Include="AdvanceQuestTime.ashx" />
+    <Content Include="IMRecentContactsList.ashx" />
+    <Content Include="LogTime.ashx" />
+    <Content Include="ApprenticeshipClubList.ashx" />
+    <Content Include="UserApprenticeshipInfoList.ashx" />
+    <Content Include="Properties\DataSources\Bussiness.CenterService.ServerData1.datasource" />
+    <Content Include="dailyloglist.ashx" />
+    <Content Include="ActivePullDown.ashx" />
+    <Content Include="LoadBoxTemp.ashx" />
+    <Content Include="LoadUserBox.ashx" />
+    <Content Include="eventrewarditemlist.ashx" />
+    <Content Include="bombconfig.ashx" />
+    <Content Include="CelebList\celebbyconsortiafightpower.ashx" />
+    <Content Include="consortianamecheck.ashx" />
+    <Content Include="gmtipallbyids.ashx" />
+    <Content Include="CreatShortCut.ashx" />
+    <Content Include="runetemplatelist.ashx" />
+    <Content Include="CardUpdateInfo.ashx" />
+    <Content Include="CardUpdateCondition.ashx" />
+    <Content Include="elitematchplayerlist.ashx" />
+    <Content Include="pettemplateinfo.ashx" />
+    <Content Include="petskilltemplateinfo.ashx" />
+    <Content Include="petskillinfo.ashx" />
+    <Content Include="petskillelementinfo.ashx" />
+    <None Include="Service References\CenterService\CenterService.wsdl" />
+    <None Include="Service References\CenterService\item.disco" />
+    <None Include="Service References\CenterService\configuration91.svcinfo" />
+    <None Include="Service References\CenterService\configuration.svcinfo" />
+    <None Include="Service References\CenterService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\CenterService\item.xsd" />
+    <None Include="Service References\CenterService\item1.xsd" />
+    <None Include="Service References\CenterService\item2.xsd" />
+    <Content Include="ShopGoodsShowList.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountRegister.ashx.cs">
+      <DependentUpon>AccountRegister.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ActiveList.ashx.cs">
+      <DependentUpon>ActiveList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AASGetState.aspx.cs">
+      <DependentUpon>AASGetState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AASGetState.aspx.designer.cs">
+      <DependentUpon>AASGetState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AASUpdateState.aspx.cs">
+      <DependentUpon>AASUpdateState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AASUpdateState.aspx.designer.cs">
+      <DependentUpon>AASUpdateState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivePullDown.ashx.cs">
+      <DependentUpon>ActivePullDown.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AuctionPageList.ashx.cs">
+      <DependentUpon>AuctionPageList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BallList.ashx.cs">
+      <DependentUpon>BallList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="bombconfig.ashx.cs">
+      <DependentUpon>bombconfig.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CardUpdateCondition.ashx.cs">
+      <DependentUpon>CardUpdateCondition.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CardUpdateInfo.ashx.cs">
+      <DependentUpon>CardUpdateInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaDayHonor.ashx.cs">
+      <DependentUpon>CelebByConsortiaDayHonor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaDayRiches.ashx.cs">
+      <DependentUpon>CelebByConsortiaDayRiches.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\celebbyconsortiafightpower.ashx.cs">
+      <DependentUpon>celebbyconsortiafightpower.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaHonor.ashx.cs">
+      <DependentUpon>CelebByConsortiaHonor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaLevel.ashx.cs">
+      <DependentUpon>CelebByConsortiaLevel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaRiches.ashx.cs">
+      <DependentUpon>CelebByConsortiaRiches.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaWeekHonor.ashx.cs">
+      <DependentUpon>CelebByConsortiaWeekHonor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByConsortiaWeekRiches.ashx.cs">
+      <DependentUpon>CelebByConsortiaWeekRiches.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByDayBestEquip.ashx.cs">
+      <DependentUpon>CelebByDayBestEquip.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByDayFightPowerList.ashx.cs">
+      <DependentUpon>CelebByDayFightPowerList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByDayGPList.ashx.cs">
+      <DependentUpon>CelebByDayGPList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByDayOfferList.ashx.cs">
+      <DependentUpon>CelebByDayOfferList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByGpList.ashx.cs">
+      <DependentUpon>CelebByGpList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByOfferList.ashx.cs">
+      <DependentUpon>CelebByOfferList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByWeekGPList.ashx.cs">
+      <DependentUpon>CelebByWeekGPList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CelebByWeekOfferList.ashx.cs">
+      <DependentUpon>CelebByWeekOfferList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CelebList\CreateAllCeleb.ashx.cs">
+      <DependentUpon>CreateAllCeleb.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ChargeMoney.aspx.cs">
+      <DependentUpon>ChargeMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChargeMoney.aspx.designer.cs">
+      <DependentUpon>ChargeMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChargeTest.ashx.cs">
+      <DependentUpon>ChargeTest.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="click.aspx.cs">
+      <DependentUpon>click.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="click.aspx.designer.cs">
+      <DependentUpon>click.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaAllyList.ashx.cs">
+      <DependentUpon>ConsortiaAllyList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaApplyAllyList.ashx.cs">
+      <DependentUpon>ConsortiaApplyAllyList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaApplyUsersList.ashx.cs">
+      <DependentUpon>ConsortiaApplyUsersList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaDutyList.ashx.cs">
+      <DependentUpon>ConsortiaDutyList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaEquipControl.ashx.cs">
+      <DependentUpon>ConsortiaEquipControl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaEquipControlList.ashx.cs">
+      <DependentUpon>ConsortiaEquipControlList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaEventList.ashx.cs">
+      <DependentUpon>ConsortiaEventList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaIMList.ashx.cs">
+      <DependentUpon>ConsortiaIMList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaInviteUsersList.ashx.cs">
+      <DependentUpon>ConsortiaInviteUsersList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaLevelList.ashx.cs">
+      <DependentUpon>ConsortiaLevelList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaList.ashx.cs">
+      <DependentUpon>ConsortiaList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="consortianamecheck.ashx.cs">
+      <DependentUpon>consortianamecheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsortiaUsersList.ashx.cs">
+      <DependentUpon>ConsortiaUsersList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckRegistration.ashx.cs">
+      <DependentUpon>CheckRegistration.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceQuestionRead.ashx.cs">
+      <DependentUpon>AdvanceQuestionRead.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceQuestTime.ashx.cs">
+      <DependentUpon>AdvanceQuestTime.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ApprenticeshipClubList.ashx.cs">
+      <DependentUpon>ApprenticeshipClubList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CreatShortCut.ashx.cs">
+      <DependentUpon>CreatShortCut.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="dailyloglist.ashx.cs">
+      <DependentUpon>dailyloglist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="elitematchplayerlist.ashx.cs">
+      <DependentUpon>elitematchplayerlist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="eventrewarditemlist.ashx.cs">
+      <DependentUpon>eventrewarditemlist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="gmtipallbyids.ashx.cs">
+      <DependentUpon>gmtipallbyids.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadBoxTemp.ashx.cs">
+      <DependentUpon>LoadBoxTemp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadUserBox.ashx.cs">
+      <DependentUpon>LoadUserBox.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="petskillelementinfo.ashx.cs">
+      <DependentUpon>petskillelementinfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="petskillinfo.ashx.cs">
+      <DependentUpon>petskillinfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="petskilltemplateinfo.ashx.cs">
+      <DependentUpon>petskilltemplateinfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="pettemplateinfo.ashx.cs">
+      <DependentUpon>pettemplateinfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="runetemplatelist.ashx.cs">
+      <DependentUpon>runetemplatelist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopGoodsShowList.ashx.cs">
+      <DependentUpon>ShopGoodsShowList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserApprenticeshipInfoList.ashx.cs">
+      <DependentUpon>UserApprenticeshipInfoList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="IMRecentContactsList.ashx.cs">
+      <DependentUpon>IMRecentContactsList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAllXml.ashx.cs">
+      <DependentUpon>CreateAllXml.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLogin.aspx.cs">
+      <DependentUpon>CreateLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateLogin.aspx.designer.cs">
+      <DependentUpon>CreateLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csFunction.cs" />
+    <Compile Include="DailyAwardList.ashx.cs">
+      <DependentUpon>DailyAwardList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="eServerUpdateType.cs" />
+    <Compile Include="ExitGameTransit.ashx.cs">
+      <DependentUpon>ExitGameTransit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ExperienceRate.aspx.cs">
+      <DependentUpon>ExperienceRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExperienceRate.aspx.designer.cs">
+      <DependentUpon>ExperienceRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FavoriteTransit.ashx.cs">
+      <DependentUpon>FavoriteTransit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GetSID.ashx.cs">
+      <DependentUpon>GetSID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Illegalcharacters\FileSystem.cs" />
+    <Compile Include="IMFriendsBbs.ashx.cs">
+      <DependentUpon>IMFriendsBbs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="IMFriendsGood.ashx.cs">
+      <DependentUpon>IMFriendsGood.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="IMListLoad.ashx.cs">
+      <DependentUpon>IMListLoad.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemStrengthenList.ashx.cs">
+      <DependentUpon>ItemStrengthenList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="KeyGenerator.ashx.cs">
+      <DependentUpon>KeyGenerator.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="KitoffUser.aspx.cs">
+      <DependentUpon>KitoffUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KitoffUser.aspx.designer.cs">
+      <DependentUpon>KitoffUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadItemsCategory.ashx.cs">
+      <DependentUpon>LoadItemsCategory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadMapsItems.ashx.cs">
+      <DependentUpon>LoadMapsItems.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadPVEItems.ashx.cs">
+      <DependentUpon>LoadPVEItems.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadUserEquip.ashx.cs">
+      <DependentUpon>LoadUserEquip.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadUserItems.ashx.cs">
+      <DependentUpon>LoadUserItems.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadUserMail.ashx.cs">
+      <DependentUpon>LoadUserMail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadUsersSort.ashx.cs">
+      <DependentUpon>LoadUsersSort.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSelectList.ashx.cs">
+      <DependentUpon>LoginSelectList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginTest.aspx.cs">
+      <DependentUpon>LoginTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginTest.aspx.designer.cs">
+      <DependentUpon>LoginTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogTime.ashx.cs">
+      <DependentUpon>LogTime.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="MailSenderList.ashx.cs">
+      <DependentUpon>MailSenderList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="MapServerList.ashx.cs">
+      <DependentUpon>MapServerList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="MarryInfoPageList.ashx.cs">
+      <DependentUpon>MarryInfoPageList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="NickNameCheck.ashx.cs">
+      <DependentUpon>NickNameCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeServerUpdate.aspx.cs">
+      <DependentUpon>NoticeServerUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoticeServerUpdate.aspx.designer.cs">
+      <DependentUpon>NoticeServerUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NPCInfoList.ashx.cs">
+      <DependentUpon>NPCInfoList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PayTransit.ashx.cs">
+      <DependentUpon>PayTransit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerManager.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QuestList.ashx.cs">
+      <DependentUpon>QuestList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="RenameConsortiaName.ashx.cs">
+      <DependentUpon>RenameConsortiaName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="RenameNick.ashx.cs">
+      <DependentUpon>RenameNick.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SendItemTest.aspx.cs">
+      <DependentUpon>SendItemTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendItemTest.aspx.designer.cs">
+      <DependentUpon>SendItemTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SentReward.ashx.cs">
+      <DependentUpon>SentReward.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SentRewardTest.aspx.cs">
+      <DependentUpon>SentRewardTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SentRewardTest.aspx.designer.cs">
+      <DependentUpon>SentRewardTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerList.aspx.cs">
+      <DependentUpon>ServerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerList.aspx.designer.cs">
+      <DependentUpon>ServerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CenterService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShopItemList.ashx.cs">
+      <DependentUpon>ShopItemList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="StaticFunction.cs" />
+    <Compile Include="StaticsMgr.cs" />
+    <Compile Include="SubmitTest.aspx.cs">
+      <DependentUpon>SubmitTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubmitTest.aspx.designer.cs">
+      <DependentUpon>SubmitTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemNotice.aspx.cs">
+      <DependentUpon>SystemNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemNotice.aspx.designer.cs">
+      <DependentUpon>SystemNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateAllList.ashx.cs">
+      <DependentUpon>TemplateAllList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserGoodsInfo.ashx.cs">
+      <DependentUpon>UserGoodsInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UserNameCheck.aspx.cs">
+      <DependentUpon>UserNameCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserNameCheck.aspx.designer.cs">
+      <DependentUpon>UserNameCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserQuestList.ashx.cs">
+      <DependentUpon>UserQuestList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizeRegister.ashx.cs">
+      <DependentUpon>VisualizeRegister.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerList.ashx.cs">
+      <DependentUpon>ServerList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizeItemLoad.ashx.cs">
+      <DependentUpon>VisualizeItemLoad.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebsResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VisualizeRegister.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{87C66FCB-06BB-42C0-86E1-ED814A77EBE4}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+      <Project>{0015bf52-a89d-4d4c-b212-d2228ff1df71}</Project>
+      <Name>Game.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Road.Flash\Road.Flash.csproj">
+      <Project>{310A9027-532A-4009-A903-AB6CB23E487B}</Project>
+      <Name>Road.Flash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlDataProvider\SqlDataProvider.csproj">
+      <Project>{037F4B7B-B05B-44A9-B83E-32C21D7A7B41}</Project>
+      <Name>SqlDataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tank.Flash\Tank.Flash.csproj">
+      <Project>{5C8C97E8-C3D1-414A-9C98-36CF75090906}</Project>
+      <Name>Tank.Flash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServerList.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadUserItems.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadMapsItems.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadUserEquip.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadItemsCategory.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadUserMail.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadUsersSort.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VisualizeItemLoad.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NickNameCheck.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMListLoad.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BallList.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveList.xml" />
+    <Content Include="AASGetState.aspx" />
+    <Content Include="AASUpdateState.aspx" />
+    <Content Include="BallList.xml" />
+    <Content Include="ChargeMoney.aspx" />
+    <Content Include="click.aspx" />
+    <Content Include="CreateLogin.aspx" />
+    <Content Include="ExperienceRate.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Illegalcharacters\Illegalcharacters.txt" />
+    <Content Include="KeyGenerator.ashx" />
+    <Content Include="GetSID.ashx" />
+    <Content Include="ChargeTest.ashx" />
+    <Content Include="KitoffUser.aspx" />
+    <Content Include="LoginTest.aspx" />
+    <Content Include="MapServerList.ashx" />
+    <Content Include="ActiveList.ashx" />
+    <Content Include="AuctionPageList.ashx" />
+    <Content Include="ConsortiaList.ashx" />
+    <Content Include="ConsortiaApplyUsersList.ashx" />
+    <Content Include="ConsortiaInviteUsersList.ashx" />
+    <Content Include="ConsortiaUsersList.ashx" />
+    <Content Include="ConsortiaDutyList.ashx" />
+    <Content Include="ConsortiaApplyAllyList.ashx" />
+    <Content Include="ConsortiaAllyList.ashx" />
+    <Content Include="ConsortiaEventList.ashx" />
+    <Content Include="CreateAllXml.ashx" />
+    <Content Include="ConsortiaLevelList.ashx" />
+    <Content Include="ConsortiaIMList.ashx" />
+    <Content Include="ItemStrengthenList.ashx" />
+    <Content Include="CelebList\CelebByGpList.ashx" />
+    <Content Include="CelebList\CelebByDayGPList.ashx" />
+    <Content Include="CelebList\CelebByWeekGPList.ashx" />
+    <Content Include="CelebList\CelebByOfferList.ashx" />
+    <Content Include="CelebList\CelebByDayOfferList.ashx" />
+    <Content Include="CelebList\CelebByWeekOfferList.ashx" />
+    <Content Include="CelebList\CelebByConsortiaRiches.ashx" />
+    <Content Include="CelebList\CelebByConsortiaDayRiches.ashx" />
+    <Content Include="CelebList\CelebByConsortiaWeekRiches.ashx" />
+    <Content Include="CelebList\CelebByConsortiaHonor.ashx" />
+    <Content Include="CelebList\CelebByConsortiaDayHonor.ashx" />
+    <Content Include="CelebList\CelebByConsortiaWeekHonor.ashx" />
+    <Content Include="CelebList\CelebByConsortiaLevel.ashx" />
+    <Content Include="CelebList\CelebByDayBestEquip.ashx" />
+    <Content Include="MailSenderList.ashx" />
+    <Content Include="CelebList\CreateAllCeleb.ashx" />
+    <Content Include="MarryInfoPageList.ashx" />
+    <Content Include="ExitGameTransit.ashx" />
+    <Content Include="PayTransit.ashx" />
+    <Content Include="FavoriteTransit.ashx" />
+    <Content Include="DailyAwardList.ashx" />
+    <Content Include="ConsortiaEquipControl.ashx" />
+    <Content Include="ConsortiaEquipControlList.ashx" />
+    <Content Include="LoginSelectList.ashx" />
+    <Content Include="IMFriendsBbs.ashx" />
+    <Content Include="IMFriendsGood.ashx" />
+    <Content Include="NPCInfoList.ashx" />
+    <Content Include="LoadPVEItems.ashx" />
+    <Content Include="CelebList\CelebByDayFightPowerList.ashx" />
+    <None Include="Properties\DataSources\Bussiness.CenterService.ServerData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ShopItemList.ashx" />
+    <Content Include="RenameConsortiaName.ashx" />
+    <Content Include="RenameNick.ashx" />
+    <Content Include="SentReward.ashx" />
+    <Content Include="NoticeServerUpdate.aspx" />
+    <Content Include="QuestList.ashx" />
+    <Content Include="LoadMapsItems.xml" />
+    <Content Include="QuestList.xml" />
+    <Content Include="SendItemTest.aspx" />
+    <Content Include="SentRewardTest.aspx" />
+    <Content Include="ServerList.aspx" />
+    <Content Include="SubmitTest.aspx" />
+    <Content Include="SystemNotice.aspx" />
+    <Content Include="TemplateAllList.ashx" />
+    <Content Include="TemplateAlllist.xml" />
+    <Content Include="UserGoodsInfo.ashx" />
+    <Content Include="UserNameCheck.aspx" />
+    <Content Include="UserQuestList.ashx" />
+    <Content Include="ValidateCode.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CenterService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>728</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Request3</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

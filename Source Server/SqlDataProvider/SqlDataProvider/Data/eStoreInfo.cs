@@ -1,0 +1,23 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: SqlDataProvider.Data.eStoreInfo
+// Assembly: SqlDataProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: E6C792E1-372D-46D0-B366-36ACC93C90BB
+// Assembly location: C:\Users\Pham Van Hungg\Desktop\Decompiler\Road\SqlDataProvider.dll
+
+namespace SqlDataProvider.Data
+{
+  public class eStoreInfo
+  {
+    public int AgilityCompose;
+    public int AttackCompose;
+    public int DefendCompose;
+    public bool IsBinds;
+    public int LuckCompose;
+    public int OldPriceValue;
+    public int PriceValue;
+    public int StoreID;
+    public int StrengthenLevel;
+    public int TemplateID;
+    public int ValidDate;
+  }
+}

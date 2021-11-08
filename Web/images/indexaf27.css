@@ -1,0 +1,363 @@
+
+
+
+.focus{
+	border: 1px solid #94816d;
+	height: 200px;
+}
+.focus-img{ 
+	width: 503px;
+	height: 200px;
+	overflow: hidden;
+	background-color: #F0E1CA;
+
+}
+.focus-img a{
+	display: inline-block;
+}
+.focus-img img{
+	width: 503px;
+	height: 200px;
+}
+.focus-menu{
+	width: 196px;
+	border-left: 1px solid #94816d;
+}
+.focus-menu span{
+	font: normal 12px/50px 宋体;
+	float: left;
+	width: 196px;
+	text-align: center;
+	height: 50px;
+	color: #eeddc2;
+	background: #fff url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/minIcon.png) no-repeat 0 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.focus-menu span.select{
+	color: #e24b09;
+	background-position: 0 -52px;
+}
+.news-box{
+	width: 492px;
+	border: 1px solid #f9e6da;
+	background-color: #fdf9f3;
+}
+.activity-box{
+	width: 198px;
+	
+}
+.news-tab{
+	background-color: #e16114;
+}
+.news-tab span{
+	float: left;
+	width: 97px;
+	color: #fff;
+	font: normal 16px/39px 微软雅黑;
+	height: 39px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.news-tab span cite{
+	width: 1px;
+	background-color: #fc7525;
+	height: 28px;
+	margin-top: 6px;
+	float: right;
+	display: block;
+}
+.news-tab span.select{
+	color: #ff620d;
+	background-color: #fdf9f3;
+}
+.news-tab span.select cite{ display: none;}
+.news-more{
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/iconList.png) no-repeat -17px -266px;
+	padding-left: 18px;
+	margin: 8px 30px 0 0;
+	color: #fff;
+}
+.news-more:hover{ color: #fff;}
+.news-content{
+	height: 229px;
+}
+.news-ul{
+	padding: 16px 23px 0;
+}
+.news-ul li{
+	float: left;
+	border-bottom: 1px dashed #d5cfc3;
+	height: 27px;
+	width: 100%;
+	line-height:27px;
+}
+.news-ul li.first{
+	height: 77px;
+	margin-bottom: 12px;
+	
+}
+.news-ul li.last{ border-bottom: none;}
+
+.news-ul li h2 a{
+	font: bold 14px/28px 宋体;
+	color:#ff620d;
+	text-align:center;
+	width: 100%;
+}
+.news-ul li p{ 
+	line-height: 22px; 
+	height: 44px; 
+	color: #5a5a5a;
+	overflow: hidden;
+}
+.news-ul li p a{
+	float: none;
+	color: #ff730d;
+	display: inline;
+}
+.news-ul li span{
+	width: 44px;
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	color: #fff;
+	background: #fff url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/minIcon.png) no-repeat -246px 0;
+	float: left;
+	margin: 4px 8px 0 0; 
+}
+.news-ul li a{
+	float: left;
+	width: 330px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.news-ul li a:hover{
+	color: #ff730d;
+}
+.news-ul li em{
+	float: right;
+}
+.activity-box img{
+	width: 196px;
+	height: 128px;
+	border: 1px solid #e0d9d7;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+}
+.activity-box img:hover{
+	-webkit-transform: scale(1.01,1.01);
+	-o-transform: scale(1.01,1.01);
+}
+.activity-box a{
+	display: block;
+}
+.activity-box .first{
+	margin-bottom: 10px;
+}
+.box-tit{
+	height: 37px;
+	font: bold 16px/37px 微软雅黑,宋体;
+	color: #ff610b;
+	padding-left: 32px;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/indexH2Bg.png) no-repeat -0 7px;
+}
+.box-tit strong{text-indent: -9999px; display: inline-block;}
+.weapon-tit{ background-position: 0 -53px;}
+.recreation-tit{ background-position: 0 -113px;}
+.box-tit a{
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/iconList.png) no-repeat -17px -224px;
+	font: normal 12px/37px 宋体;
+	color: #a49482;
+	padding-left: 18px;
+	text-indent: 0;
+}
+.data-box{
+	border-top: 2px solid #f9e5d9;
+	background-color: #fdf9f3;
+	height: 329px;
+}
+.data-left{
+	width: 258px;
+	height: 313px;
+	overflow: hidden;
+}
+.data-rgt{
+	width: 444px;
+}
+.data-menu{
+	margin-top: 33px;
+}
+.data-menu a{
+	float: left;
+	width: 100px;
+	height: 110px;
+	margin-right: 4px;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/dataBg.png) no-repeat;
+	text-indent: -9999px;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+}
+.data-menu a.a{ background-position: 0 0;}
+.data-menu a.b{ background-position: -100px 0;}
+.data-menu a.c{ background-position: -200px 0;}
+.data-menu a.d{ background-position: -300px 0;}
+.data-menu a.a:hover,.data-menu a.select_0{ background-position: -0 -110px;}
+.data-menu a.b:hover,.data-menu a.select_1{ background-position: -100px -110px;}
+.data-menu a.c:hover,.data-menu a.select_2{ background-position: -200px -110px;}
+.data-menu a.d:hover,.data-menu a.select_3{ background-position: -300px -110px;}
+.game-guide{ 
+	color: #ff620d; 
+	height: 22px;
+	padding: 22px 0 8px;
+}
+.game-guide strong{ font-size: 14px;}
+.data-ul li{
+	float: left;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/iconList.png) no-repeat -24px -300px;
+	height: 26px;
+	line-height: 26px;
+	width: 126px;
+	overflow: hidden;
+}
+.data-ul li a{
+	color: #5a5a5a;
+	margin-left: 10px;
+}
+.data-ul li a:hover{ color: #ff610b;}
+.weapon-box{
+	background-color: #fdf9f3;
+	height: 208px;
+	padding: 0 11px;
+}
+.weapon-menu,.recreation-menu{
+	border-bottom: 1px solid #e0d9d7;
+	height: 38px;
+	
+}
+.weapon-menu span,.recreation-menu span{
+	float: left;
+	width: 80px;
+	margin-right: 20px;
+	cursor: pointer;
+	font: bold 14px/38px 宋体;
+	text-align: center;
+	color: #96836f;
+}
+.weapon-menu span.select,.recreation-menu span.select{
+	color: #ff610b;
+}
+.tab-underline,.tab-underline2{
+	width: 80px;
+	left: 0;
+	top: 36px;
+	height: 4px;
+	background-color: #ff610b;
+	overflow: hidden;
+}
+.weapon-ul{ padding-left: 0px;}
+.weapon-ul li{
+	float: left;
+	width: 103px;
+	margin: 18px 0 0 9px;
+	display: inline;
+}
+.weapon-ul li a{ color: #5a5a5a;}
+.weapon-ul li a:hover{ color: #ff610b;}
+.weapon-ul li *{ 
+	float: left; 
+	width: 100%; 
+	text-align: center;
+	line-height: 32px;
+}
+.weapon-ul li img{
+	width: 101px;
+	height: 101px;
+	border: 1px solid #ad997c;
+	-webkit-transition:-webkit-transform .2s linear;
+	-moz-transition:-moz-transform .2s linear;
+	-o-transition:-o-transform .2s linear;
+}
+.weapon-ul li img:hover{
+	-webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
+	-o-transform: scale(1.05,1.05);
+
+}
+.recreation-box{
+	height: 198px;
+	background-color: #fdf9f3;
+	padding: 0 11px;
+}
+.recreation-menu span{
+	width: 106px;
+	margin-right: 14px;
+}
+.tab-underline2{
+	width: 106px;
+}
+.recreation-ul {  margin-left: -4px;}
+.recreation-ul li{
+	float: left;
+	width: 149px;
+	height: 115px;
+	margin: 21px 0 0 18px;
+	display: inline;
+}
+.recreation-ul li img{
+	width: 149px;
+	height: 115px;
+}
+
+/*友情链接*/
+.friendlink-box{
+	min-height: 74px;
+	_height: 74px;
+	background-color: #fdf9f3;
+	padding: 11px;
+}
+.friendlink-box a{
+	margin: 0 10px;
+	line-height: 30px;
+	color: #5a5a5a;
+	float: left;
+}
+.friendlink-tit{
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/friendlink.png) 0 5px no-repeat;
+}
+
+/* 左边微信 */
+.weixin-s,.weixin-b{ 
+    position: fixed; 
+    top: 50%;
+    left: 0;
+    z-index:9999;
+    _position: absolute;
+    _top:expression(offsetParent.scrollTop+document.documentElement.clientHeight-this.offsetHeight);    
+}
+.weixin-s{
+    margin-top: -70px;
+    width: 54px;
+    height: 140px;
+    cursor: pointer;
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/weixin-s.jpg) no-repeat;
+}
+.weixin-b{
+    margin-top: -109px;
+    display: none;
+    width: 113px;
+    height: 218px;
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/weixin-b.jpg) no-repeat;
+}
+.weixin-b span{
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:url(about:blank);
+}

@@ -1,0 +1,460 @@
+/*四种颜色带内边的框*/
+
+.border-box {
+	position: relative;
+}
+
+.border-box, .border-box-inner {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;	
+}
+
+.border-box .triangle {
+	position: absolute;
+	width: 20px;
+	height: 11px;
+	_font-size: 0;
+}
+
+.border-box-inner h4 {
+	clear: both;
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 8px;
+}
+
+.border-box-inner .h4detail {
+	line-height: 20px;
+}
+
+.border-box-inner p {
+
+	line-height: 20px;
+}
+
+
+.border-box-inner p b {
+	float: left;
+	font-weight: 400;
+	padding: 0 2px;
+}
+.border-box-inner p a {
+	float: left;
+	padding: 0 5px;
+	white-space: nowrap;
+}
+/*绿色-弹弹新兵*/
+.green-box h3 {
+	color: #5aa700;
+}
+
+.green-box h4 {
+	color: #206100;
+	font-size: 15px;
+	border-bottom: 1px dashed #206100;
+}
+
+.green-box {
+	border-color: #a0d327;
+	background: #f0ffa9;
+}
+
+.green-box .border-box-inner {
+	border-color: #fff;
+}
+
+.green-box .triangle {
+	background-position: 0 0;
+	top:-9px;
+	left: 56px;
+}
+/*紫色-弹王进阶*/
+.purple-box h3 {
+	color: #731bfe;
+}
+
+.purple-box h4 {
+	color: #4300ae;
+	font-size: 15px;
+	border-bottom: 1px dashed #4300ae;
+}
+
+.purple-box {
+	border-color: #a879ff;
+	background: #d6bcff;
+}
+
+.purple-box .border-box-inner {
+	border-color: #e6d5fe;
+}
+
+.purple-box .triangle {
+	background-position: 0 -11px;
+	top:-9px;
+	left: 220px;
+}
+
+
+
+/*棕色-高手速成*/
+.brown-box h3 {
+	color: #ff8400;
+}
+
+.brown-box h4 {
+	color: #7b3a00;
+	font-size: 15px;
+	border-bottom: 1px dashed #7b3a00;
+}
+
+.brown-box {
+	border-color: #ffa009;
+	background: #ffe8b8;
+}
+
+.brown-box .border-box-inner {
+	border-color: #fffff2;
+}
+
+.brown-box .triangle {
+	background-position: 0 -22px;
+	top:-9px;
+	left: 390px;
+}
+
+
+
+/*蓝色-特色系统*/
+
+.blue-box h3 {
+	color: #21c0fe;
+}
+
+.blue-box h4 {
+	color: #005ea0;
+	font-size: 15px;
+	border-bottom: 1px dashed #005ea0;
+}
+
+.blue-box {
+	border-color: #5ec4ff;
+	background: #c2e9ff;
+}
+
+.blue-box .border-box-inner {
+	border-color: #ecf8ff;
+}
+
+.blue-box .triangle {
+	background-position: 0 -33px;
+	top:-10px;
+	left: 550px;
+}
+
+/*游戏资料列表页*/
+
+.gameData-list .border-box {
+	position: relative;
+	height: 134px;	
+}
+
+.gameData-list .border-box i{
+	display: block;
+	position: absolute;
+	width: 124px;
+	height: 136px;
+	top:-1px;
+	left:-1px;
+	background-image: url(http://ddt.wan.com/Public/www/ddt/style/images/gameData.jpg);
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+.gameData-list h3 {
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+	text-shadow:1px 1px 1px rgba(255,255,255,0.8),-1px -1px 1px rgba(100,100,100,0.2);
+}
+
+.gameData-list .border-box-inner {
+	padding-left: 140px;
+	height: 132px;
+}
+
+
+
+
+
+/*弹弹新兵*/
+.gameData-list-basic h3 {
+	color: #669900;
+}
+.gameData-list-basic i {
+	background-position: 0 0;
+}
+
+
+
+/*弹王进阶*/
+
+.gameData-list-advanced h3 {
+	color: #731bfe;
+}
+
+.gameData-list-advanced i {
+	background-position: 0 -136px;
+}
+
+
+
+/*高手速成*/
+
+.gameData-list-master h3 {
+	color: #ff8400;
+}
+
+.gameData-list-master i {
+	background-position: 0 -272px;
+}
+
+
+
+/*特色系统*/
+
+.gameData-list-special {
+	color: #21c0fe;
+}
+.gameData-list-special i {
+	background-position: 0 -408px;
+}
+
+/*新手引导*/
+.gameData-list-tiro i {
+	background-position: 0 -544px;
+}
+
+
+a.greenBgLink:link,
+a.greenBgLink:visited { 
+    color:#206100;
+}
+a.greenBgLink:hover{ 
+    color:#fff;
+    background: #5ca900; 
+}
+
+.green-box p a.current:link, .green-box p a.current:visited{
+	color:#fff;
+    background: #5ca900; 
+}
+a.purpleBgLink:link,
+a.purpleBgLink:visited { 
+    color:#4300ae;
+}
+a.purpleBgLink:hover { 
+    color:#fff;
+    background: #4300ae; 
+}
+a.brownBgLink:link,
+a.brownBgLink:visited { 
+    color:#7b3a00;
+}
+a.brownBgLink:hover{ 
+    color:#fff;
+    background: #6e3400; 
+}
+.brown-box p a.current:link, .brown-box p a.current:hover,.brown-box p a.current:visited{
+	color:#fff;
+    background: #6e3400; 
+}
+
+.purple-box p a.current:link, .purple-box p a.current:visited {
+color: #fff;
+background: #4300ae;
+}
+a.blueBgLink:link,
+a.blueBgLink:visited { 
+    color:#005ea0;
+}
+a.blueBgLink:hover {
+	color:#fff;
+    background: #005ea0; 
+}
+.blue-box p a.current:link, .blue-box p a.current:visited{
+	color:#fff;
+    background: #005ea0; 
+}
+
+
+
+/*ui-tab*/
+
+.tab-trigger { 
+  position: relative;
+}
+.tab li {
+
+    vertical-align: top;
+    position: relative;
+}
+
+.tab-item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.tab-item a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.tab-item a:hover {
+    text-decoration: none;
+}
+/*游戏资料详细页*/
+.gameData-tab {
+	margin-top: 40px;
+}
+.gameData-tab .tab-trigger {
+	*position:static;
+}
+.gameData-tab .tab-item {
+	width: 134px;
+	height: 190px;
+	margin-left: 28px;
+	*float: left;
+
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	background-image: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/gameData-mir.jpg);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 	
+}
+
+.gameData-tab .tab-item-first {
+	margin-left: 0;
+}
+
+.gameData-tab .tab-item-current {
+	margin-top: 12px;
+	opacity: 1;
+	filter:alpha(opacity=100);
+	box-shadow: 0 -10px 30px rgba(247,237,139,0.6);
+
+}
+
+.gameData-tab .tab-item-basic {
+	background-position: 0 0;
+}
+
+.gameData-tab .tab-item-advanced {
+	background-position: 0 -190px;
+}
+
+.gameData-tab .tab-item-master {
+	background-position: 0 -380px;
+}
+
+.gameData-tab .tab-item-special {
+	background-position: 0 -570px;
+}
+
+
+
+
+.gameData-tab .tab-cnt-item {
+	position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 	
+}
+
+.gameData-tab .border-box-inner {
+	padding: 12px 24px;
+}
+
+.gameData-tab .border-box-inner p {
+	margin-left: 80px;
+}
+
+.gameData-tab h4 {
+	height: 40px;
+	float: left;
+}
+
+
+.gameData-tab .border-box {
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+
+.gameData-detail {
+	background: #fef8d6;
+	border: solid #fee3ab 1px;
+	border-radius: 5px;
+}
+
+.gameData-detail .article-detail-head {
+	margin: 0 30px;
+	padding-left: 0;
+	padding-bottom: 5px;
+	border-bottom: solid #b48750 2px;
+	text-align: left;
+}
+
+.gameData-detail .article-detail-title {
+	color: #845e31;
+}
+
+.gameData-detail .article-detail-content {
+	padding: 15px 30px;
+}
+.iconLiTriangle, .greenBtn-s, .more, .dmore, .txtHot, .hotDot, .orangeBtn-s, .orangeBtn-s1, .brownBtn-s, .weibo, .sina, .tinyYellow, .tinyOrange, .triangle {
+display: block;
+background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/s_icons.png) no-repeat;
+_background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/s_icons_ie6.png) no-repeat;
+text-indent: -9999px;
+}
+.gameData-tab .tab-cnt h4{
+	border-bottom: 0;
+}
+.tab-items{ height: 190px;}
+
+
+/*游戏资料内容页*/
+.data-content{
+	border: 1px solid #f9e5d9;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 1px;
+	margin-top: 29px;
+}
+.sub-dataContent{
+	background-color: #fff9ee;
+	padding: 12px 25px 40px;
+}
+.dataTit{
+	font: bold 20px/30px 微软雅黑,宋体;
+	color: #ff620d;
+}
+.data-time{
+	color: #855e32;
+	padding: 4px 0;
+	border-bottom: 2px solid #ffdecc;
+}
+.data-time span{ cursor: pointer;}
+.data-textContent{
+	color: #663704;
+	padding: 30px 0;
+}

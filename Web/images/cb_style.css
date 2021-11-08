@@ -1,0 +1,450 @@
+/*
+// 	ClearBox Config File (CSS)
+*/
+
+#CB_LoadingImage, .CB_TextNav, #CB_ShowTh, #CB_Thumbs2, #CB_Thumbs, .CB_RoundPixBugFix, #CB_Padding, #CB_ImgContainer, #CB_PrevNext, #CB_ContentHide, #CB_Text, #CB_Window, #CB_Image, #CB_TopLeft, #CB_Top, #CB_TopRight, #CB_Left, #CB_Content, #CB_Right, #CB_BtmLeft, #CB_Btm, #CB_BtmRight, #CB_Prev, #CB_Prev:hover, #CB_Prev:focus, #CB_Prev:active, #CB_Next, #CB_Next:hover, #CB_Next:focus, #CB_Next:active, #CB_CloseWindow, #CB_SlideShowS, #CB_SlideShowP, #CB_SlideShowBar {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	outline-style: none;
+	outline: 0;
+}
+
+#CB_Text,
+#CB_Text *,
+#CB_HiddenTextT,
+#CB_HiddenTextT *,
+#CB_HiddenTextC,
+#CB_HiddenTextC *,
+#CB_HiddenTextG,
+#CB_HiddenTextG *,
+#CB_OSD {
+	line-height: normal;
+	letter-spacing: 0px;
+}
+
+#CB_LoadingImage {
+	position: absolute;
+        left: -10000px;
+        top: -10000px;
+	margin-left: -16px;
+	margin-top: -16px;
+	visibility: hidden;
+	z-index: 1101;
+}
+
+.CB_Absolute {
+	position: absolute;
+}
+
+#CB_NotImgContent {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+}
+
+#CB_NotIC, #CB_NotImgContent {
+	border: none;
+	outline-style: none;
+	outline: 0;
+}
+
+#CB_Window {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 0px;
+	border-spacing: 0px;
+	border-width: 0px;
+	border-collapse: separate;
+	visibility: hidden;
+	z-index: 1100;
+}
+
+.CB_Sep {
+	color: #bbb;
+}
+
+.CB_TnThumbs {
+	width: 0px;
+	height: 0px;
+	border: 0px;
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+.CB_BtmNav {
+	vertical-align: middle;
+	border: 0;
+	margin-left: 3px;
+}
+
+#CB_ImgHide {
+	position: absolute;
+	visibility: hidden;
+	z-index: 1098;
+	left: 0px;
+}
+
+#CB_ShowTh {
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1097;
+	bottom: 0px;
+	left: 0px;
+}
+
+#CB_Thumbs {
+	display: none;
+	height: 62px;
+	padding-top: 10px;
+	position: absolute;
+	z-index: 1100;
+	overflow: hidden;
+	bottom: 0px;
+	left: 0px;
+}
+
+#CB_Thumbs2 {
+	margin: auto 0;
+	height: 52px;
+	position: absolute;
+}
+
+.CB_ThumbsImg {
+	position: absolute;
+	cursor: pointer;
+	border: 1px solid #eee;
+}
+
+#CB_ThumbsActImg {
+	cursor: default;
+	border: 1px dotted #fff;
+}
+
+.CB_RoundPixBugFix {
+	display: block;
+	visibility: hidden;
+	font-family: arial;
+	font-size: 1pt;
+}
+
+#CB_ImgContainer {
+	position: relative;
+	width: 100%;
+}
+
+#CB_PrevNext {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1002;
+}
+
+#CB_NavPrev, #CB_NavNext {
+	visibility: hidden;
+	position: absolute;
+	z-index: 1001;
+	top: 47%;
+	cursor: pointer;
+}
+
+#CB_NavPrev {
+	left: 18px;
+}
+
+#CB_NavNext {
+	right: 14px;
+}
+
+#CB_ContentHide {
+	position: absolute;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+}
+
+#CB_OSD {
+	position: fixed;
+	left: 50%;
+	z-index: 5000;
+	font-size: 22px;
+	color: #fff;
+	background-color: #000;
+	visibility: hidden;
+}
+
+#CB_Image {
+	position: relative;
+}
+
+#CB_TopLeft {
+	background-image:url(s_topleft.png);
+	background-position:right bottom;
+}
+
+#CB_Top {
+	background-image:url(s_top.png);
+	background-position:left bottom;
+}
+
+#CB_TopRight {
+	background-image:url(s_topright.png);
+	background-position:left bottom;
+}
+
+#CB_Left {
+	background-image:url(s_left.png);
+	background-position:right top;
+}
+
+#CB_Right {
+	background-image:url(s_right.png);
+	background-position:left top;
+}
+
+#CB_BtmLeft {
+	background-image:url(s_btmleft.png);
+	background-position:right top;
+}
+
+#CB_Btm {
+	background-image:url(s_btm.png);
+	background-position:left top;
+}
+
+#CB_BtmRight {
+	background-image:url(s_btmright.png);
+	background-position:left top;
+}
+
+#CB_Prev, #CB_Next {
+	background: transparent url(blank.gif) no-repeat scroll 0%;
+	display: block;	
+	width: 49%;
+	cursor: pointer;
+	z-index: 1102;
+}
+
+.CB_TextNav {
+	text-decoration: underline;
+	padding-right: 5px;
+	color: #999;
+	cursor: pointer;
+	border: none;
+}
+
+.CB_TextNav:hover {
+	text-decoration: underline;
+	color: #555;
+	border: none;
+}
+
+#CB_Prev {
+	float: left;
+	left: 0px;
+}
+
+#CB_Next {
+	float: right;
+	left: 0px;
+}
+
+#CB_Prev:hover {
+background:transparent;
+}
+
+#CB_Next:hover {
+background:transparent;
+}
+
+#CB_CloseWindow {
+	position: absolute;
+	z-index: 1104;
+	cursor: pointer;
+}
+
+#CB_SlideShowS, #CB_SlideShowP {
+	position: absolute;
+	left: -11px;
+	top: -10px;
+	z-index: 1104;
+	cursor: pointer;
+}
+
+#CB_SlideShowBar {
+	width: 0px;
+	position: fixed;
+	height: 2px;
+	display: none;
+	z-index: 1102;
+}
+
+#CB_Text {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
+#CB_TT, #CB_TC {
+	position: relative;
+}
+
+#CB_TT, #CB_HiddenTextT {
+	white-space: nowrap;
+}
+
+#CB_TC {
+	overflow-y: auto;
+}
+
+#CB_HiddenTextT, 
+#CB_HiddenTextC, 
+#CB_HiddenTextG {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1000;
+	top: -100000px;
+	left: -100000px;
+}
+
+.CB_PreloadBugFix {
+	width: 0px;
+	height: 0px;
+	z-index: -1000;
+	visibility: hidden;
+	position: absolute;
+}
+
+#CB_Debug,
+#CB_Debug a,
+.dbg_1,
+.dbg_2,
+.dbg_2a,
+.dbg_3,
+.dbg_3a,
+.dbg_4,
+.dbg_5 {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: none transparent;
+	letter-spacing: 0px;
+	line-height: normal;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: none;
+}
+
+#CB_Debug {
+	display: none;
+	background: #000 none;
+	width: 280px;
+	padding: 10px;
+	z-index: 5000;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.dbg_1 {
+	color: #fff;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.dbg_2,
+.dbg_2a  {
+	color: #999;
+	padding: 10px 0px 0px 20px;
+}
+
+.dbg_2a {
+	color: #ff8800;
+}
+
+.dbg_3 {
+	color: #fff;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.dbg_4 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.dbg_5 {
+	color: #fff;
+	margin: 15px 0px 5px 0px;
+	border-bottom: 5px dotted #ccc;
+	font-weight: bold;
+}
+
+#CB_Debug a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+}
+
+#CB_Debug .dbg_2a a {
+	color: #ff8800;
+	border-bottom: 1px dotted #ff8800;
+}
+
+#CB_Debug a:hover,
+#CB_Debug .dbg_2a a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+}
+
+#CB_OutNavContainer {
+	display: none;
+	z-index: 5000;
+	width: 100%;
+	position: fixed;
+	padding-bottom: 20px;
+	bottom: 0px;
+}
+
+#CB_OutNavG {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#CB_OutNavB, #CB_OutNavBG {
+	width: 180px;
+	height: 50px;
+}
+
+#CB_OutNavB {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#CB_OutNavBG {
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 20px;
+	background: transparent url(on_bg.png) no-repeat;
+}
+
+#CB_OutNavB a {
+	cursor: pointer;
+}
+
+#CB_OutNavB a img {
+	position: relative;
+}
+
+#CB_OutNavB a:hover img {
+	top: -50px;
+}

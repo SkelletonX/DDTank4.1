@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <config>
+    <FLASHSITE value="http://127.0.0.1/flash/" />
+    <BACKUP_FLASHSITE value="http:///127.0.0.1/flash/" />
+    <USE_MD5 value="False" />
+    <SITE value="http://res2-ddt.ddtankbr.com.br/" />
+    <FIRSTPAGE value="http://127.0.0.1/" />
+    <REGISTER value="http://127.0.0.1/" />
+    <REQUEST_PATH value="http://127.0.0.1/request/" />
+    <LOGIN_PATH value="http://127.0.0.1/" siteName="DDT" />
+    <FILL_PATH value="http://bb.mail.ru/billing/payment" />
+    <POLICY_FILES>
+      <file value="http://127.0.0.1/crossdomain.xml" />
+    </POLICY_FILES>
+    <GAME_BOXPIC value="7" />
+    <FIGHTLIB value="true" />
+    <ALLOW_MULTI value="false" />
+    <TRAINER_PATH value="tutorial.swf" />
+    <MUSIC_LIST value="1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1034,1035,1036,1037,1038,1039,1040,1059,1060,1061,1062,1063,1065,1067,1068,1069,1077" />
+    <LANGUAGE value="spain" />
+    <PARTER_ID value="1002935" />
+    <STATISTIC value="true" />
+    <SUCIDE_TIME value="120" />
+    <GAME_BOXPIC value="1" />
+    <ISTOPDERIICT value="true" />
+    <COUNT_PATH value="http://gamebihandler.7road.com/ddt_game/List_BI_Click.ashx" />
+    <PHP isShow="true" link="true" site="http://me.zing.vn/{id}/home" infoPath="http://assist289.gn.zing.vn/GetUserImg.aspx?uid={uid}" />
+    <OFFICIAL_SITE value="http://gunny.zing.vn/" />
+    <GAME_FORUM value="http://diendan.zing.vn/gunny/" />
+    <COMMUNITY_FRIEND_PATH isUser="false" value="http://ddt.the9.com/addfriend.php" />
+    <COMMUNITY_INVITE_PATH value="http://ddt.the9.com/invite.php" />
+    <COMMUNITY_FRIEND_LIST_PATH value="http://assist289.gn.zing.vn/Other/GetSnsFriendList" snsPath="http://s19.ddt.kaixin001.com.cn/assist/SnsServer/NotifySnsUserUpgrade" isexist="true" isexistBtnVisble="true" cmBtnVisble="false" />
+    <COMMUNITY_INTERFACE enable="true" path="http://assist289.gn.zing.vn/Other/" shareBtnVisble="false" />
+    <COMMUNITY_FRIEND_INVITED_SWITCH value="true" invitedOnline="true" />
+    <EXTERNAL_INTERFACE path="http://fb.egame.hk/GameAccess/facebook/ddt/postAction.jsp" enable="false" />
+    <!--海外社区开关-->
+    <COMMUNITY_MICROBLOG value="true" />
+    <COMMUNITY_SINA_SECOND_MICROBLOG value="true" />
+    <ALLOW_POPUP_FAVORITE value="false" />
+    <FILL_JS_COMMAND value="user_ZingPay" enable="true" />
+    <SHIELD_NOTICE value="false" />
+    <!-- 客服系统开关 -->
+    <!--单机版新手引导的开关-->
+    <TRAINER_STANDALONE value="true" />
+    <!--3.3之前的新版新手引导开关-->
+    <USER_GUILD_ENABLE value="true" />
+    <!--远征码头等级限制-->
+    <MINLEVELDUPLICATE value="10" />
+    <!-- DISABLE_TASK_ID 为禁用的任务的ID，如有多个，请用逗号隔开 for example : 1002,1003,1004,新浪需要屏蔽的任务有378,379,380,381,604 -->
+    <DISABLE_TASK_ID value="545,382,383,384,385" />
+    <STATISTICS enable="true" />
+    <!--小游戏等级限制开关-->
+    <LITTLEGAMEMINLV value="20" />
+    <!-- 交友中心和结婚的开关-->
+    <SHOW_BACKGROUND value="true" />
+    <!--下载登录开关-->
+    <DOWNLOAD value="false" />
+    <!-- 开启温泉房间续费功能-->
+    <HOTSPRING value="true" />
+    <!--- 幸运数字的开关-->
+    <LUCKY_NUMBER enable="false" />
+    <!--- 占卜的开关-->
+    <LOTTERY enable="false" />
+    <!-- 随机选频 -->
+    <RANDOM_CHANNEL value="true" />
+    <!-- 同城好友开关 -->
+    <LIKEPERSON_SELECTED value="false" />
+    <!-- 游戏边框背景开关 -->
+    <MODULE>
+      <CIVIL enable="true" />
+      <CHURCH enable="true" />
+    </MODULE>
+    <CHAT_FACE>
+      <DISABLED_LIST list="38" />
+    </CHAT_FACE>
+    <GAME_FRAME_CONFIG>
+      <!-- 每帧执行的毫秒数,正常值应为40毫秒,并允许在35至45毫秒之间波动  (游戏内正常帧速为 25帧/秒)-->
+      <FRAME_TIME_OVER_TAG value="67" />
+      <!-- 连续低于上述毫秒的帧数 (游戏内正常帧速为 25帧/秒) -->
+      <FRAME_OVER_COUNT_TAG value="25" />
+    </GAME_FRAME_CONFIG>
+    <OVERSEAS>
+      <OVERSEAS_COMMUNITY_TYPE value="0" callPath="" callJS="" shareBtnVisble="true" />
+    </OVERSEAS>
+    <FEEDBACK enable="true" telNumber="" />
+    <CLIENT_DOWNLOAD value="" />
+    <FEEDBACK enable="true" telNumber="" />
+    <SUIT enable="true" />
+    <DUNGEON_OPENLIST value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,70001,12016,15001,16001,30" advancedEnable="true" epicLevelEnable="true" footballEnable="true" />
+    <!--弹王盟约开关-->
+    <KINGBLESS enable="true" />
+    <!--任务托管 -->
+    <QUEST_TRUSTEESHIP enable="false" />
+    <!--勇士秘境开关-->
+    <WARRIORS_FAM enable="true" />
+    <!--战魂开关-->
+    <GEMSTONE enable="true" />
+    <!--跨区私聊开关-->
+    <CROSS_CHAT_SERVER enable="true" />
+    <EXALTBTN enable="true" />
+    <!--跨区大喇叭-->
+    <CROSSBUGGLE enable="true" />
+    <!--10分钟后检查到用登录器登录，对玩家进行踢出游戏操作-->
+    <CHECKDESK_KILL enable="false" />
+    <HIT_SHELL pointEnable="true" progressEnable="true" dotteLineEnable="false" smallMapsEnable="false" />
+    <!--小地图控制-->
+    <SMALLMAP enable="true" meterEnable="false" borderEnable="false" alphaEnable="false" />
+    <!--PK模式按钮-->
+    <PK_BTN enable="false" />
+    <VIP_DISCOUNT enable="false" />
+    <MAGICSTONE_DISCOUNT enable="false" />
+    <FIGHT_TIME count="1000" />
+    <PETS_EAT enable="true" />
+    <MAGICHOUSE enable="true" />
+    <GIRDATTEST enable="false" />
+    <GIRLHEAD enable="false" />
+    <TRUSTEESHIPVIEW enable="false" />
+    <GODSYAH enable="true" />
+    <LOGIN_DEVICE link="http://207.154.207.57/client/setup.exe" />
+    <RECORD_PATH value="false" />
+</config>
+<update>
+<version from="204" to="205">
+<file value="*"/>
+<file value="flash/*"/>
+<file value="image/map/1276/*"/>
+<file value="image/map/1499/*"/>
+<file value="image/map/1500/*"/>
+<file value="image/map/1502/*"/>
+<file value="image/map/1503/*"/>
+<file value="image/map/27/*"/>
+</version>
+<version from="205" to="206">
+<file value="*"/>
+<file value="flash/*"/>
+<file value="image/map/1276/*"/>
+<file value="image/map/1499/*"/>
+<file value="image/map/1500/*"/>
+<file value="image/map/1502/*"/>
+<file value="image/map/1503/*"/>
+<file value="image/map/27/*"/>
+</version>
+<version from="206" to="207">
+<file value="*"/>
+<file value="flash/*"/>
+<file value="image/map/1276/*"/>
+<file value="image/map/1499/*"/>
+<file value="image/map/1500/*"/>
+<file value="image/map/1502/*"/>
+<file value="image/map/1503/*"/>
+<file value="image/map/27/*"/>
+</version>
+<version from="207" to="208">
+<file value="flash/ui/spain/bones/bones.xml"/>
+<file value="flash/1.png"/>
+<file value="flash/2.png"/>
+<file value="flash/3.png"/>
+<file value="flash/4.png"/>
+<file value="flash/ui/spain/xml/xml.png"/>
+<file value="flash/ui/spain/swf/horse.swf"/>
+<file value="ui/spain/bones/bones.xml"/>
+<file value="1.png"/>
+<file value="2.png"/>
+<file value="3.png"/>
+<file value="4.png"/>
+<file value="ui/spain/xml/xml.png"/>
+<file value="ui/spain/swf/horse.swf"/>
+</version>
+<version from="208" to="209">
+<file value="flash/DDT_Loading.swf"/>
+<file value="flash/Loading.swf"/>
+<file value="flash/ui/spain/swf/chatball.swf"/>
+<file value="DDT_Loading.swf"/>
+<file value="Loading.swf"/>
+<file value="ui/spain/swf/chatball.swf"/>
+</version>
+<version from="209" to="210">
+<file value="flash/ui/spain/language.png"/>
+<file value="flash/ui/spain/swf/worldcup.swf"/>
+<file value="ui/spain/language.png"/>
+<file value="ui/spain/swf/worldcup.swf"/>
+</version>
+<version from="210" to="211">
+<file value="flash/ui/spain/language.png"/>
+<file value="flash/ui/spain/swf/worldcup.swf"/>
+<file value="ui/spain/language.png"/>
+<file value="ui/spain/swf/worldcup.swf"/>
+</version>
+<version from="211" to="212">
+<file value="flash/ui/spain/language.png"/>
+<file value="flash/ui/spain/swf/worldcup.swf"/>
+<file value="ui/spain/language.png"/>
+<file value="ui/spain/swf/worldcup.swf"/>
+</version>
+<version from="212" to="213">
+<file value="flash/1.png"/>
+<file value="flash/2.png"/>
+<file value="flash/3.png"/>
+<file value="flash/4.png"/>
+<file value="flash/ui/spain/xml/xml.png"/>
+<file value="1.png"/>
+<file value="2.png"/>
+<file value="3.png"/>
+<file value="4.png"/>
+<file value="ui/spain/xml/xml.png"/>
+</version>
+<version from="213" to="214">
+<file value="flash/ui/spain/bones/bones.xml"/>
+<file value="flash/ui/spain/bones/gamebones.xml"/>
+<file value="flash/1.png"/>
+<file value="flash/2.png"/>
+<file value="flash/3.png"/>
+<file value="flash/4.png"/>
+<file value="flash/DDT_Loading.swf"/>
+<file value="flash/Loading.swf"/>
+<file value="ui/spain/bones/bones.xml"/>
+<file value="ui/spain/bones/gamebones.xml"/>
+<file value="1.png"/>
+<file value="2.png"/>
+<file value="3.png"/>
+<file value="4.png"/>
+<file value="DDT_Loading.swf"/>
+<file value="Loading.swf"/>
+</version>
+<version from="214" to="215">
+<file value="flash/ui/spain/bones/gamebones.xml"/>
+<file value="flash/2.png"/>
+<file value="flash/4.png"/>
+<file value="flash/ui/spain/xml/xml.png"/>
+<file value="flash/ui/spain/swf/horse.swf"/>
+<file value="ui/spain/bones/gamebones.xml"/>
+<file value="2.png"/>
+<file value="4.png"/>
+<file value="ui/spain/xml/xml.png"/>
+<file value="ui/spain/swf/horse.swf"/>
+</version>
+<version from="215" to="216">
+<file value="flash/ui/spain/bones/gamebones.xml"/>
+<file value="flash/2.png"/>
+<file value="flash/4.png"/>
+<file value="flash/ui/spain/xml/xml.png"/>
+<file value="flash/ui/spain/swf/horse.swf"/>
+<file value="ui/spain/bones/gamebones.xml"/>
+<file value="2.png"/>
+<file value="4.png"/>
+<file value="ui/spain/xml/xml.png"/>
+<file value="ui/spain/swf/horse.swf"/>
+</version>
+</update>
+</root>

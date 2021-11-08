@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="DetourInstrumentationProviderNotSet"><value>The UnitTestIsolation instrumentation was not properly initialized. Please ensure that your VisualStudio installation supports this feature.</value></data>
+  <data name="FailedToGetProfilerModuleHandle"><value>Failed to get profiler module handle '{0}'. {1}</value></data>
+  <data name="ShimsContextNotCreated"><value>A ShimsContext must be in scope in order to register shims. Use the snippet below to fix your code.
+-- C#:
+using Microsoft.QualityTools.Testing.Fakes;
+
+using(ShimsContext.Create())
+{
+    // your test code using Shims here
+}
+-- VisualBasic.NET
+Imports Microsoft.QualityTools.Testing.Fakes
+
+Using ShimsContext.Create
+    ' your test code using Shims here
+End Using  
+  </value></data>
+  <data name="CannotInstantiateAbstractType"><value>cannot instantiate abstract type </value></data>
+  <data name="MustBeAClassOrAValuetype"><value>must be a class or a valuetype</value></data>
+  <data name="IncompatibleMethodAndDetour"><value>incompatible method and shim</value></data>
+  <data name="DetoursAreNotEnabled"><value>UnitTestIsolation is not enabled.</value></data>
+  <data name="MustNotUseTheVarargsCallingConvention"><value>must not use the 'variable arguments' calling convention</value></data>
+  <data name="MethodMustBeAFullyInstantiated"><value>method must be a fully instantiated</value></data>
+  <data name="FailedToResolveProfilerPath"><value>Failed to resolve profiler path from COR_PROFILER_PATH and COR_PROFILER environment variables.</value></data>
+  <data name="OptionalReceiverShouldBeNullForStaticMethods"><value>optionalReceiver should be null for static methods</value></data>
+  <data name="StaticMethodCannotBeDispatchedToInstances"><value>static method cannot be dispatched to instances</value></data>
+  <data name="ProfilerRegistryPathTraceMessage"><value>Accessing default value of registry key {0} to obtain profiler path.</value></data>
+  <data name="FailedToOpenProfilerRegistryKey"><value>Failed to open profiler registry key '{0}'.</value></data>
+  <data name="FailedToSetDetourProvider"><value>Unexpected error returned by SetDetourProvider in profiler library '{0}'.</value></data>
+  <data name="CannotBeInstrumented"><value>{0}.{1} cannot be detoured</value></data>
+  <data name="ProfilerClassIdTraceMessage"><value>Obtained profiler CLSID from the {0} environment variable: {1}.</value></data>
+  <data name="MustNotBeExtern"><value>must not be extern</value></data>
+  <data name="FailedToGetFunctionAddress"><value>Failed to get address of function {0} from library '{1}'.</value></data>
+  <data name="AMethodFromAMoleWasNotResolvedPleaseRegenerateTheMoles"><value>A method from a shim was not resolved. Please regenerate the .fakes file.</value></data>
+  <data name="DelegateTargetIsANullReference"><value>delegate target is a null reference</value></data>
+  <data name="MustNotBeAbstract"><value>must not be abstract</value></data>
+  <data name="ProfilerPathTraceMessage"><value>Obtained profiler path from the {0} environment variable: {1}.</value></data>
+  <data name="MethodIsAbstract"><value>method is abstract</value></data>
+  <data name="MethodIsAStaticConstructor"><value>method is a static constructor</value></data>
+  <data name="MustBeAFullyInstantiedMethod"><value>must not contain generic arguments</value></data>
+  </root>

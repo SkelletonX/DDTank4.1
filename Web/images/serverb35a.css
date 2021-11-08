@@ -1,0 +1,351 @@
+/*20150302 by yunen*/
+.rela{ position: relative;}
+.clear{
+    clear: both;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+.wrap-box{
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/bg.jpg?v=20150624) no-repeat 50% 0;
+    height: 1050px;
+}
+.hearder,.footer-img{ display: none;}
+.ser-tit{
+    width: 432px;
+    height: 54px;
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/titBg.png) no-repeat;
+    text-indent: -9999px;
+    margin-top: 32px;
+}
+.server-rgt{
+    width: 686px;
+    margin-right: 50px;
+    _margin-right: 25px;
+}
+/*登录*/
+.unlogin-box,.login-box{ padding: 0;}
+.serv-me{   margin-top: 85px; height: 82px;}
+
+.ser-nologin input{
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #af751e;
+    margin-right: 10px;
+    padding: 0 5px;
+    color: #8a5613;
+    font-size: 12px;
+    float: left;
+    border: none;
+    margin-top: 10px;
+}
+.ser-login-btn{
+    float: left;
+    width: 157px;
+    height: 47px;
+    cursor: pointer;
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/serverBg.png) no-repeat 0 -128px;
+    _background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/serverBg_8.png) no-repeat 0 -128px;
+    margin:0 0 0 12px;
+}
+.ser-nologin a{
+    color: #8a5613;
+    margin-right: 152px;
+}
+.ser-nologin label{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #8a5613;
+    font-size: 12px;
+    top: 10px;
+}
+#tips_username{ left: 5px;}
+#tips_pass{ left: 205px;}
+.ser-loginend{font-size: 14px;  color: #8a5613;}
+.account-data{
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+.account-data a,.account-data em,.last-server a{ color: #000; cursor: pointer;}
+.account-data a{ padding: 0 10px;}
+.last-server .lastLogin{
+    display: inline;
+    background: none;
+    color: #df0000;
+}
+.userVal{ margin-left: 0; color: #df0000}
+.serverList{
+    margin-top: 58px;
+}
+
+
+.server-nav{
+    float: right;
+    margin: 4px 52px 0 0;
+    font-size: 12px;
+    display: inline;
+    _padding-left: 300px;
+}
+.server-nav a{
+    float: left;
+    margin: 0 7px;
+    text-align: center;
+    color: #8a5613;
+    font-size: 15px;
+}
+.server-nav em{
+    float: left;
+    color: #8a5613;
+    margin: 0 6px;
+
+}
+.index-rgt{
+    margin-right: 30px;
+    _display: inline;
+}
+.account-data a:hover{
+    font-weight: normal;
+    color: #df0000;
+}
+
+
+
+
+
+
+
+.allservers{
+    overflow: auto;
+    height: 478px;
+    padding-top: 10px;
+}
+#footer7road{ display: none;}
+.ser-tel,.ser-tel a{
+    color: #8a5613;
+    font-size: 12px;
+    line-height: 36px;
+}
+
+.server-news{
+
+}
+.server-news ul{
+	border: 1px solid #f9e6da;
+	border-top: none;
+	padding: 16px;
+}
+.server-news li{
+	float: left;
+	border-bottom: 1px dashed #d5cfc3;
+	height: 31px;
+	line-height: 31px;
+	width: 100%;
+}
+.server-news li em{
+	float: right;
+}
+.server-news li span{ float: left;}
+.server-news li a{
+	float: left;
+	width: 140px;
+	_width: 138px;
+	height: 31px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-left: 4px;
+	_margin-left: 2px;
+}
+.server-news li a:hover{ color: #f8781a;}
+.server-news li.last{
+	border: none;
+}
+.recommend-ser{
+    margin-top: 100px;
+}
+.my-ser{ width: 336px;}
+.serverList-h2{
+	font: normal 26px/46px Microsoft Yahei;
+	color: #7b3e09;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverTitBg.png) no-repeat -3px -145px;
+	margin: 14px 0 0 0px;
+	padding-left: 50px;
+}
+.recommend-h2{
+	background-position: 0 4px;
+}
+.my-h2{
+	background-position: -9px -72px;
+	padding-left: 44px;
+}
+.sub-recommend-ser,.sub-my-ser{
+
+}
+.recommend-box{
+
+	height: 52px;
+	overflow: hidden;
+}
+.recommend-box a{
+    float: left;
+    margin-right: 60px;
+	text-align: center;
+	color: #fff;
+    width: 206px;
+    height: 42px;
+	font: bold 14px/42px Microsoft Yahei;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/serverBg.png) no-repeat 0 0;
+}
+.recommend-box a:hover{ color: #fff;}
+.recommend-box a.die{
+	background-position: -55px -876px;
+}
+.my-box{
+	width: 304px;
+	height: 40px;
+	overflow: hidden;
+	padding: 40px 0 0 23px;
+}
+.my-box a{
+	float: left;
+	margin-right: 14px;
+	width: 138px;
+	font: bold 14px/40px Microsoft Yahei;
+	color: #fff;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/minIcon.png) no-repeat -0 -990px;
+	text-align: center;
+}
+.my-box a:hover{ color: #fff;}
+.my-box a.die{
+	background-position: -142px -990px;
+}
+.serverList{
+	/*background-color: #fff6ec;*/
+}
+.server-menu{
+	width: 67px;
+}
+.server-menu span{
+	position: relative;
+	width: 67px;
+	float: left;
+	height: 150px;
+	background-color: #d5ccc3;
+	text-align: center;
+	cursor: pointer;
+	color: #6e6a66;
+}
+.server-menu span cite{
+	display: block;
+	width: 17px;
+	line-height: 16px;
+	font-size: 16px;
+	font-family: Microsoft Yahei;
+	margin: 60px auto 0;
+}
+.server-menu span em{
+	display: none;
+	position: absolute;
+	width: 10px;
+	height: 19px;
+	background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/minIcon.png) no-repeat -248px -22px;
+	left: 67px;
+	top: 65px;
+}
+.server-menu span.select{
+	background-color: #f6e5d3;
+	color: #793e09;
+}
+.server-menu span.select em{
+	display:block;
+}
+.server-plat{
+	width: 546px;
+}
+.server-plat-menu {
+    height: 28px;
+    border-bottom: 2px solid #b85804;
+}
+.server-plat-menu span{
+	float: left;
+	width: 104px;
+	height: 28px;
+	line-height: 28px;
+    color: #8a5613;
+	text-align: center;
+	font-family: Microsoft Yahei;
+    font-size: 14px;
+	cursor: pointer;
+
+    position: relative;
+}
+.server-plat-menu span.select{
+    background: #b85804;
+    color: #f5e9e2;
+    border-bottom: 2px solid #b85804;
+
+}
+
+.server-tab-box li{
+	float: left;
+    width: 206px;
+    height: 42px;
+    font: bold 14px/42px Microsoft Yahei;
+    background: url(http://ddt.wan.com/Public/www/ddt/style/images/ver1404/serverlist/serverBg.png) no-repeat 0 -0px;
+	cursor: pointer;
+	margin: 10px 22px 0 0;
+}
+.server-tab-box li:hover{
+
+}
+.server-tab-box li.die:hover{
+
+}
+.server-tab-box li.die{
+    background-position: 0 -84px;
+}
+.server-tab-box li.die a{
+	color: #999;
+}
+.server-tab-box li.die .hot-ico{
+
+}
+.server-tab-box li.die9{
+    background-position: 0 -42px;
+}
+.server-tab-box li a{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.server-tab-box li a:hover{
+	color: #000;
+}
+.server-tab-box li.die a:hover{
+	color: #fff;
+}
+.server-name{
+	font: bold 12px/20px SimSun;
+	display: block;
+	padding-top: 4px;
+}
+.hot-txt,.hot-ico,.degree,.server-tip{
+	float: left;
+	line-height: 20px;
+}
+.hot-ico{
+	background: url(http://image4.ddt.wan.com/images/hotIco.gif) no-repeat;
+	width: 55px;
+	height: 20px;	
+	position: relative;
+	top: -2px;
+}
+.degree{
+	padding-left: 5px;
+}

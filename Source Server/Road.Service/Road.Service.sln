@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Road.Service", "Road.Service.csproj", "{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{64C54DBE-7654-4E95-96F3-6F8F4A840EA2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>Tank.Request</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax">
+      <HintPath>..\Ref\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Ref\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Data.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\SqlDataProvider\SqlDataProvider.csproj">
+      <Project>{B207140C-6EEB-40A6-BE9C-571A7E0D2556}</Project>
+      <Name>SqlDataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{F39581A9-F80F-4F61-B44B-6A5B9F54A3E6}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Road.Flash\Road.Flash.csproj">
+      <Project>{ADD7DB33-05AF-4919-B329-30BEAC962B27}</Project>
+      <Name>Road.Flash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+      <Project>{CE00E9B0-507A-4090-8A81-D3DEBA20B929}</Project>
+      <Name>Game.Base</Name>
+    </ProjectReference>
+    <Reference Include="zlib.net">
+      <HintPath>..\Ref\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Count\click.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByAchievementPointDayList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByAchievementPointList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByAchievementPointWeekList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaDayHonor.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaDayRiches.cs" />
+    <Compile Include="Tank.Request.CelebList\celebbyconsortiafightpower.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaHonor.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaLevel.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaRiches.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaWeekHonor.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByConsortiaWeekRiches.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByDayBestEquip.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByDayFightPowerList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByDayGiftGpList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByDayGPList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByDayOfferList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByGiftGpList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByGpList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByOfferList.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByWeekGiftGP.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByWeekGPList.cs" />
+    <Compile Include="Tank.Request.CelebList\celebbyweekleaguescore.cs" />
+    <Compile Include="Tank.Request.CelebList\CelebByWeekOfferList.cs" />
+    <Compile Include="Tank.Request.CelebList\CreateAllCeleb.cs" />
+    <Compile Include="Tank.Request.CenterService\CenterServiceClient.cs" />
+    <Compile Include="Tank.Request.CenterService\ICenterService.cs" />
+    <Compile Include="Tank.Request.CenterService\ICenterServiceChannel.cs" />
+    <Compile Include="Tank.Request.Illegalcharacters\FileSystem.cs" />
+    <Compile Include="Tank.Request.Properties\Settings.cs" />
+    <Compile Include="Tank.Request\AASGetState.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\AASUpdateState.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\AccountRegister.cs" />
+    <Compile Include="Tank.Request\ActiveList.cs" />
+    <Compile Include="Tank.Request\ActivePullDown.cs" />
+    <Compile Include="Tank.Request\AdvanceQuestionRead.cs" />
+    <Compile Include="Tank.Request\AdvanceQuestTime.cs" />
+    <Compile Include="Tank.Request\ApprenticeshipClubList.cs" />
+    <Compile Include="Tank.Request\AuctionPageList.cs" />
+    <Compile Include="Tank.Request\BallList.cs" />
+    <Compile Include="Tank.Request\bombconfig.cs" />
+    <Compile Include="Tank.Request\CardUpdateCondition.cs" />
+    <Compile Include="Tank.Request\CardUpdateInfo.cs" />
+    <Compile Include="Tank.Request\ChargeMoney.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\ChargeTest.cs" />
+    <Compile Include="Tank.Request\CheckRegistration.cs" />
+    <Compile Include="Tank.Request\commitweeklyuserrecord.cs" />
+    <Compile Include="Tank.Request\ConsortiaAllyList.cs" />
+    <Compile Include="Tank.Request\ConsortiaApplyAllyList.cs" />
+    <Compile Include="Tank.Request\ConsortiaApplyUsersList.cs" />
+    <Compile Include="Tank.Request\ConsortiaDutyList.cs" />
+    <Compile Include="Tank.Request\ConsortiaEquipControl.cs" />
+    <Compile Include="Tank.Request\ConsortiaEquipControlList.cs" />
+    <Compile Include="Tank.Request\ConsortiaEventList.cs" />
+    <Compile Include="Tank.Request\ConsortiaIMList.cs" />
+    <Compile Include="Tank.Request\ConsortiaInviteUsersList.cs" />
+    <Compile Include="Tank.Request\ConsortiaLevelList.cs" />
+    <Compile Include="Tank.Request\ConsortiaList.cs" />
+    <Compile Include="Tank.Request\consortianamecheck.cs" />
+    <Compile Include="Tank.Request\ConsortiaUsersList.cs" />
+    <Compile Include="Tank.Request\CreateAllXml.cs" />
+    <Compile Include="Tank.Request\CreateLogin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\CreatShortCut.cs" />
+    <Compile Include="Tank.Request\csFunction.cs" />
+    <Compile Include="Tank.Request\DailyAwardList.cs" />
+    <Compile Include="Tank.Request\dailyloglist.cs" />
+    <Compile Include="Tank.Request\elitematchplayerlist.cs" />
+    <Compile Include="Tank.Request\eServerUpdateType.cs" />
+    <Compile Include="Tank.Request\eventrewarditemlist.cs" />
+    <Compile Include="Tank.Request\ExitGameTransit.cs" />
+    <Compile Include="Tank.Request\ExperienceRate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\FavoriteTransit.cs" />
+    <Compile Include="Tank.Request\GetSID.cs" />
+    <Compile Include="Tank.Request\giftrecievelog.cs" />
+    <Compile Include="Tank.Request\giftsendlog.cs" />
+    <Compile Include="Tank.Request\Global.cs" />
+    <Compile Include="Tank.Request\gmtipallbyids.cs" />
+    <Compile Include="Tank.Request\IMFriendsBbs.cs" />
+    <Compile Include="Tank.Request\IMFriendsGood.cs" />
+    <Compile Include="Tank.Request\IMListLoad.cs" />
+    <Compile Include="Tank.Request\IMRecentContactsList.cs" />
+    <Compile Include="Tank.Request\ItemStrengthenList.cs" />
+    <Compile Include="Tank.Request\KeyGenerator.cs" />
+    <Compile Include="Tank.Request\KitoffUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\LoadBoxTemp.cs" />
+    <Compile Include="Tank.Request\LoadItemsCategory.cs" />
+    <Compile Include="Tank.Request\LoadMapsItems.cs" />
+    <Compile Include="Tank.Request\LoadPVEItems.cs" />
+    <Compile Include="Tank.Request\LoadUserBox.cs" />
+    <Compile Include="Tank.Request\LoadUserEquip.cs" />
+    <Compile Include="Tank.Request\LoadUserItems.cs" />
+    <Compile Include="Tank.Request\LoadUserMail.cs" />
+    <Compile Include="Tank.Request\LoadUsersSort.cs" />
+    <Compile Include="Tank.Request\Login.cs" />
+    <Compile Include="Tank.Request\LoginSelectList.cs" />
+    <Compile Include="Tank.Request\LoginTest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\LogTime.cs" />
+    <Compile Include="Tank.Request\MailSenderList.cs" />
+    <Compile Include="Tank.Request\MapServerList.cs" />
+    <Compile Include="Tank.Request\MarryInfoPageList.cs" />
+    <Compile Include="Tank.Request\NickNameCheck.cs" />
+    <Compile Include="Tank.Request\NoticeServerUpdate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\NPCInfoList.cs" />
+    <Compile Include="Tank.Request\PayTransit.cs" />
+    <Compile Include="Tank.Request\petskillelementinfo.cs" />
+    <Compile Include="Tank.Request\petskillinfo.cs" />
+    <Compile Include="Tank.Request\petskilltemplateinfo.cs" />
+    <Compile Include="Tank.Request\pettemplateinfo.cs" />
+    <Compile Include="Tank.Request\PlayerManager.cs" />
+    <Compile Include="Tank.Request\QuestList.cs" />
+    <Compile Include="Tank.Request\RenameConsortiaName.cs" />
+    <Compile Include="Tank.Request\RenameNick.cs" />
+    <Compile Include="Tank.Request\runetemplatelist.cs" />
+    <Compile Include="Tank.Request\SameCityIMLoad.cs" />
+    <Compile Include="Tank.Request\SendItemTest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\SentReward.cs" />
+    <Compile Include="Tank.Request\SentRewardTest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\ServerList.cs" />
+    <Compile Include="Tank.Request\ServerList1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\shopcheapitemlist.cs" />
+    <Compile Include="Tank.Request\ShopGoodsShowList.cs" />
+    <Compile Include="Tank.Request\ShopItemList.cs" />
+    <Compile Include="Tank.Request\StaticFunction.cs" />
+    <Compile Include="Tank.Request\StaticsMgr.cs" />
+    <Compile Include="Tank.Request\SubmitTest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\SystemNotice.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\TemplateAllList.cs" />
+    <Compile Include="Tank.Request\UserApprenticeshipInfoList.cs" />
+    <Compile Include="Tank.Request\UserGoodsInfo.cs" />
+    <Compile Include="Tank.Request\UserNameCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\UserQuestList.cs" />
+    <Compile Include="Tank.Request\UserRankDate.cs" />
+    <Compile Include="Tank.Request\ValidateCode.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tank.Request\VisualizeItemLoad.cs" />
+    <Compile Include="Tank.Request\VisualizeRegister.cs" />
+    <Compile Include="Tank.Request\VoteSubmit.cs" />
+    <Compile Include="Tank.Request\WebsResponse.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

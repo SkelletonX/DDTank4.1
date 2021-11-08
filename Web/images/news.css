@@ -1,0 +1,233 @@
+.news-menu{
+	margin-top: 32px;
+	height:34px;
+	overflow: hidden;
+}
+.news-menu span{
+	float: left;
+	width: 126px;
+	height: 32px;
+	font: normal 16px/32px 微软雅黑,宋体;
+	color: #ff620d;
+	text-align: center;
+	border: 1px solid #ff620d;
+	cursor: pointer;
+}
+.news-menu span.select{
+	background-color: #ff620d;
+	color: #fff;
+}
+.news-menu span a{ color: #ff620d; display: block; height: 100%;}
+.news-menu span.select a{ color: #fff;}
+.news-box { margin-top: 10px; min-height: 933px; _height: 933px;}
+.news-box li{
+	float: left;
+	width: 100%;
+	height: 34px;
+	border-bottom: 1px dashed #d5cfc3;
+	line-height: 34px;
+	color: #5a5a5a;
+}
+.news-box li a{ color: #5a5a5a;}
+.news-box li span{
+	float: left;
+	color: #ff620d;
+	margin-right: 4px;
+}
+.news-box li em{ float: right;}
+.dataTit{
+	font: bold 20px/30px 微软雅黑,宋体;
+	color: #ff620d;
+	text-align: center;
+	padding: 40px 0 5px;
+}
+.data-time{
+	color: #5a5a5a;
+	padding: 4px 0 15px;
+	border-bottom: 1px solid #ffdecc;
+	text-align: center;
+}
+.data-time span,.data-time em{
+	cursor: pointer;
+	color: #ff620d;
+}
+.news-content{
+	color: #5a5a5a;
+	padding: 15px 0 40px;
+}
+.news-content table td{border: 1px solid #f9e5d9;}
+.correlation{
+	margin-top: 30px;
+}
+.correlation h2{
+	font: bold 14px/32px 宋体;
+	color: #ff620d;
+}
+.correlation ul{
+	border: 1px solid #f9e6da;
+	background-color: #fff9ee;
+	padding: 10px 0;
+}
+.correlation li{
+	float: left;
+	width: 280px;
+	height: 26px;
+	margin-left: 29px;
+	display: inline;
+	overflow: hidden;
+}
+.correlation li a{ color: #555;}
+.correlation li a:hover{ color: #ff620d;}
+.correlation li em{
+	float: left;
+	width: 2px;
+	height: 2px;
+	font-size: 0;
+	overflow: hidden;
+	background-color: #555;
+	margin: 11px 4px 0 0;
+}
+
+
+/*玩家休闲*/
+.recreation-box{
+	min-height: 600px;
+	_height: 600px;
+}
+.recreation-box ul{
+	margin: 10px 0 0 -52px;
+}
+.recreation-box li{
+	float: left;
+	text-align: center;
+	color: #793800;
+	margin: 15px 0 0 52px;
+	display: inline;
+	width: 178px;
+	overflow: hidden;
+	height: 178px;
+}
+.recreation-box li img{
+	width: 172px;
+	height: 150px;
+	border: 1px solid #f9e5d9;
+	padding: 2px;
+}
+.recreation-box li a{
+	display: block;
+}
+.recreation-box li a:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=60);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*新手引导*/
+.gameData-list .border-box {
+	position: relative;
+	height: 134px;
+}
+
+.gameData-list .border-box i{
+	display: block;
+	position: absolute;
+	width: 124px;
+	height: 136px;
+	top:-1px;
+	left:-1px;
+	background-image: url(http://ddt.wan.com/Public/www/ddt/style/images/gameData.jpg);
+	background-repeat: no-repeat;
+	background-position:0 -544px;
+	z-index: 10;
+}
+.gameData-list h3 {
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+	text-shadow:1px 1px 1px rgba(255,255,255,0.8),-1px -1px 1px rgba(100,100,100,0.2);
+}
+
+.gameData-list .border-box-inner {
+	padding-left: 140px;
+	height: 132px;
+}
+
+.brown-box {
+	border-color: #ffa009;
+	background: #ffe8b8;
+}
+.border-box, .border-box-inner {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+}
+.brown-box .border-box-inner {
+	border-color: #fffff2;
+}
+.brown-box h4 {
+	color: #7b3a00;
+	font-size: 15px;
+	border-bottom: 1px dashed #7b3a00;
+}
+.border-box-inner h4 {
+	clear: both;
+	height: 32px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+
+.border-box-inner .h4detail {
+	line-height: 20px;
+}
+
+.border-box-inner p {
+
+	line-height: 20px;
+}
+
+
+.border-box-inner p b {
+	float: left;
+	font-weight: 400;
+	padding: 0 2px;
+}
+.border-box-inner p a {
+	float: left;
+	padding: 0 5px;
+	white-space: nowrap;
+}
+a.brownBgLink:link,
+a.brownBgLink:visited {
+    color:#7b3a00;
+}
+a.brownBgLink:hover{
+    color:#fff;
+    background: #6e3400;
+}
+.brown-box p a.current:link,.brown-box p a.current:hover,.brown-box p a.current:visited{
+	color:#fff;
+    background: #6e3400;
+}
+
+.data-textContent{
+	color: #5a5a5a;
+	padding: 15px 0 40px;
+}
+
+
+
+
+.element-menu span{
+	width: 104px;
+}

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Pham Van Hungg\Desktop\Decompiler\Road\Road.Service.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F70CD54-DC6C-45E7-B603-A39C34CC7AAD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Road.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Game.Service</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_1_.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Game.Base\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlDataProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SqlDataProvider\bin\Debug\SqlDataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameServerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameServerServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IAction.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="actions\ConsoleStart.cs" />
+    <Compile Include="actions\ServiceInstall.cs" />
+    <Compile Include="actions\ServiceRun.cs" />
+    <Compile Include="actions\ServiceStart.cs" />
+    <Compile Include="actions\ServiceStop.cs" />
+    <Compile Include="actions\ServiceUninstall.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_1_.ico" />
+    <Content Include="p1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{4be8e789-3989-499a-b866-9bb102ec1150}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Center.Server\Center.Server.csproj">
+      <Project>{3c0c2114-7e73-4c11-872f-9cfbdff247f9}</Project>
+      <Name>Center.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+      <Project>{1d59ca92-63aa-4f2c-84f5-c2bb2aa7eda7}</Project>
+      <Name>Game.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Logic\Game.Logic.csproj">
+      <Project>{294850bd-bb82-42b4-b324-fd2df4c4160d}</Project>
+      <Name>Game.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Server\Game.Server.csproj">
+      <Project>{af2071c9-6992-4b05-898f-8335d3f846f0}</Project>
+      <Name>Game.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

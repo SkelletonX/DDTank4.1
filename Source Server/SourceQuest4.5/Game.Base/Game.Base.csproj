@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CE00E9B0-507A-4090-8A81-D3DEBA20B929}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>Game.Base</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Ref\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.3.2.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game.Base.Commands\BuildScriptCommand.cs" />
+    <Compile Include="Game.Base.Commands\CommandMgrSetupCommand.cs" />
+    <Compile Include="Game.Base.Commands\ScriptManagerCommand.cs" />
+    <Compile Include="Game.Base.Config\BaseAppConfig.cs" />
+    <Compile Include="Game.Base.Config\ConfigElement.cs" />
+    <Compile Include="Game.Base.Config\ConfigPropertyAttribute.cs" />
+    <Compile Include="Game.Base.Config\XMLConfigFile.cs" />
+    <Compile Include="Game.Base.Events\GameEventMgr.cs" />
+    <Compile Include="Game.Base.Events\GameServerEvent.cs" />
+    <Compile Include="Game.Base.Events\GameServerStartedEventAttribute.cs" />
+    <Compile Include="Game.Base.Events\GameServerStoppedEventAttribute.cs" />
+    <Compile Include="Game.Base.Events\RoadEvent.cs" />
+    <Compile Include="Game.Base.Events\RoadEventHandler.cs" />
+    <Compile Include="Game.Base.Events\RoadEventHandlerCollection.cs" />
+    <Compile Include="Game.Base.Events\ScriptEvent.cs" />
+    <Compile Include="Game.Base.Events\ScriptLoadedEventAttribute.cs" />
+    <Compile Include="Game.Base.Events\ScriptUnloadedEventAttribute.cs" />
+    <Compile Include="Game.Base.Packets\GSPacketIn.cs" />
+    <Compile Include="Game.Base.Packets\StreamProcessor.cs" />
+    <Compile Include="Game.Base\AbstractCommandHandler.cs" />
+    <Compile Include="Game.Base\BaseClient.cs" />
+    <Compile Include="Game.Base\BaseConnector.cs" />
+    <Compile Include="Game.Base\BaseServer.cs" />
+    <Compile Include="Game.Base\BaseServerConfiguration.cs" />
+    <Compile Include="Game.Base\ClientEventHandle.cs" />
+    <Compile Include="Game.Base\CmdAttribute.cs" />
+    <Compile Include="Game.Base\CommandMgr.cs" />
+    <Compile Include="Game.Base\ConsoleClient.cs" />
+    <Compile Include="Game.Base\eAllowIP.cs" />
+    <Compile Include="Game.Base\eBuffer.cs" />
+    <Compile Include="Game.Base\ePrivLevel.cs" />
+    <Compile Include="Game.Base\GameCommand.cs" />
+    <Compile Include="Game.Base\ICommandHandler.cs" />
+    <Compile Include="Game.Base\Marshal.cs" />
+    <Compile Include="Game.Base\PacketIn.cs" />
+    <Compile Include="Game.Base\ResourceUtil.cs" />
+    <Compile Include="Game.Base\Statistics.cs" />
+    <Compile Include="Game.Base\WeakMulticastDelegate.cs" />
+    <Compile Include="Game.Base\WeakRef.cs" />
+    <Compile Include="Game.Server.Managers\ScriptMgr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Road.Base.Packets\FSM.cs" />
+    <Compile Include="Road.Base\QueueMgr.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

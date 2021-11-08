@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F39581A9-F80F-4F61-B44B-6A5B9F54A3E6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>Bussiness</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\SqlDataProvider\SqlDataProvider.csproj">
+      <Project>{B207140C-6EEB-40A6-BE9C-571A7E0D2556}</Project>
+      <Name>SqlDataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+      <Project>{CE00E9B0-507A-4090-8A81-D3DEBA20B929}</Project>
+      <Name>Game.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness.CenterService\CenterServiceClient.cs" />
+    <Compile Include="Bussiness.CenterService\ICenterService.cs" />
+    <Compile Include="Bussiness.CenterService\ICenterServiceChannel.cs" />
+    <Compile Include="Bussiness.CenterService\ServerData.cs" />
+    <Compile Include="Bussiness.Interface\BaseInterface.cs" />
+    <Compile Include="Bussiness.Interface\DWInterface.cs" />
+    <Compile Include="Bussiness.Interface\InterfaceType.cs" />
+    <Compile Include="Bussiness.Interface\QYInterface.cs" />
+    <Compile Include="Bussiness.Interface\SRInterface.cs" />
+    <Compile Include="Bussiness.Managers\AchievementMgr.cs" />
+    <Compile Include="Bussiness.Managers\ActiveMgr.cs" />
+    <Compile Include="Bussiness.Managers\ConsortiaExtraMgr.cs" />
+    <Compile Include="Bussiness.Managers\DropMgr.cs" />
+    <Compile Include="Bussiness.Managers\EventAwardMgr.cs" />
+    <Compile Include="Bussiness.Managers\EventLiveMgr.cs" />
+    <Compile Include="Bussiness.Managers\GoldEquipMgr.cs" />
+    <Compile Include="Bussiness.Managers\ItemBoxMgr.cs" />
+    <Compile Include="Bussiness.Managers\ItemMgr.cs" />
+    <Compile Include="Bussiness.Managers\PetMgr.cs" />
+    <Compile Include="Bussiness.Managers\QQTipsMgr.cs" />
+    <Compile Include="Bussiness.Managers\QuestMgr.cs" />
+    <Compile Include="Bussiness.Managers\ShopMgr.cs" />
+    <Compile Include="Bussiness.Managers\SubActiveMgr.cs" />
+    <Compile Include="Bussiness.Managers\WorldEventMgr.cs" />
+    <Compile Include="Bussiness.Protocol\eDropType.cs" />
+    <Compile Include="Bussiness.Protocol\eReloadType.cs" />
+    <Compile Include="Bussiness.WebLogin\ChenckValidateRequest.cs" />
+    <Compile Include="Bussiness.WebLogin\ChenckValidateRequestBody.cs" />
+    <Compile Include="Bussiness.WebLogin\ChenckValidateResponse.cs" />
+    <Compile Include="Bussiness.WebLogin\ChenckValidateResponseBody.cs" />
+    <Compile Include="Bussiness.WebLogin\Get_UserSexRequest.cs" />
+    <Compile Include="Bussiness.WebLogin\Get_UserSexRequestBody.cs" />
+    <Compile Include="Bussiness.WebLogin\Get_UserSexResponse.cs" />
+    <Compile Include="Bussiness.WebLogin\Get_UserSexResponseBody.cs" />
+    <Compile Include="Bussiness.WebLogin\PassPortSoap.cs" />
+    <Compile Include="Bussiness.WebLogin\PassPortSoapChannel.cs" />
+    <Compile Include="Bussiness.WebLogin\PassPortSoapClient.cs" />
+    <Compile Include="Bussiness\ActiveBussiness.cs" />
+    <Compile Include="Bussiness\AreaBussiness.cs" />
+    <Compile Include="Bussiness\Base64.cs" />
+    <Compile Include="Bussiness\BaseBussiness.cs" />
+    <Compile Include="Bussiness\BaseCrossBussiness.cs" />
+    <Compile Include="Bussiness\BuffType.cs" />
+    <Compile Include="Bussiness\ChatInputView.cs" />
+    <Compile Include="Bussiness\CheckCode.cs" />
+    <Compile Include="Bussiness\ConsortiaBussiness.cs" />
+    <Compile Include="Bussiness\CookieInfoBussiness.cs" />
+    <Compile Include="Bussiness\CountBussiness.cs" />
+    <Compile Include="Bussiness\GameProperties.cs" />
+    <Compile Include="Bussiness\IniReader.cs" />
+    <Compile Include="Bussiness\ItemRecordBussiness.cs" />
+    <Compile Include="Bussiness\LanguageMgr.cs" />
+    <Compile Include="Bussiness\ManageBussiness.cs" />
+    <Compile Include="Bussiness\MapBussiness.cs" />
+    <Compile Include="Bussiness\MemberShipBussiness.cs" />
+    <Compile Include="Bussiness\OrderBussiness.cs" />
+    <Compile Include="Bussiness\PlayerBussiness.cs" />
+    <Compile Include="Bussiness\ProduceBussiness.cs" />
+    <Compile Include="Bussiness\PveBussiness.cs" />
+    <Compile Include="Bussiness\RandomSafe.cs" />
+    <Compile Include="Bussiness\ServiceBussiness.cs" />
+    <Compile Include="Bussiness\StaticFunction.cs" />
+    <Compile Include="Bussiness\Statistics.cs" />
+    <Compile Include="Bussiness\ThreadSafeRandom.cs" />
+    <Compile Include="Bussiness\UserInfoBussiness.cs" />
+    <Compile Include="Bussiness\XmlExtends.cs" />
+    <Compile Include="Game.Server.Managers\ConsortiaLevelMgr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
