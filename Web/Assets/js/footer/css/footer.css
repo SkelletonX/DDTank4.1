@@ -1,0 +1,71 @@
+/*------底部开始------*/
+#footer{
+    background:#282828;
+}
+#footer .footerWrap {
+	position:relative;
+  text-align: left;
+  clear: both;
+  overflow: hidden;
+  font-size: 12px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #282828;
+}
+#footer .footer {
+	font-family: Microsoft YaHei;
+	line-height: 20px;
+  padding: 20px 0;
+  zoom:1;
+}
+#footer .footer:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+#footer .footerTips {
+	margin-top: 5px;
+	line-height: 18px;
+	color: #4b4a4a;;
+	text-align: left;
+	
+}
+#footer .footerLogo {
+	position:absolute;
+	top:50%;
+	margin-top:-25px;
+	left:0;
+	width: 185px;
+	height: 50px;
+	background: url(../images/logo_sys_f.html) no-repeat;
+}
+#footer .footerNav {
+	float: left;
+  display:inline;
+	padding: 3px 0 5px 215px;
+	color: #7c7c7c;
+	line-height: 24px;
+	width: 680px;
+}
+#footer .footerNav a {
+	margin: 0 3px;
+	color: #7a7a7a;
+}
+#footer .footerNav p em {
+	font-family: Verdana;
+	font-size: 10px;
+}
+#footer .helpInfo {
+	padding-top: 5px;
+}
+
+/*文化部电子标签图标*/
+.game_rfid { background:url(../images/gameRFID.png) no-repeat;width: 50px;height: 50px;float: right;margin-top: 36px;margin-right: 2px;display: none;}
+.game_rfid:hover{text-decoration: none;}
+
+/*------底部结束------*/
+
+#footer{
+	width: 100%;
+}

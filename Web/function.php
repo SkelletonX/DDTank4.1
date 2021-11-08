@@ -294,11 +294,11 @@ function getUserData($userinfo)
 	$userinfo->LastActivityDate = $r['LastActivityDate'];
 	$userinfo->Point = $r['Point'];
 }
-function Recharge($ChargeID,$Cupons,$Nickname,$UserName)
+function Recharge($ChargeID,$Cupons,$Nickname,$UserName,$UserID,$NeedMoney)
 {
-	global $conn,$dbtank41;
+    global $conn,$dbtank41,$WSDL;
 	$hoje = date('d/m/Y');
-	$str = "insert into {$dbtank41}.[dbo].[Charge_Money] values('{$ChargeID}','{$UserName}',{$Cupons},'{$hoje}',1,'ADM',0,null,'{$Nickname}')";
+	$str = "insert into {$dbtank41}.[dbo].[Charge_Money] values('{$ChargeID}','{$UserName}',{$Cupons},'{$hoje}',1,'PicPay',{$NeedMoney},null,'{$NickName}')";
 	$data = sqlsrv_prepare($conn,$str);
 	if(!$data)
 	{
@@ -308,6 +308,46 @@ function Recharge($ChargeID,$Cupons,$Nickname,$UserName)
 	if(!$result)
 	{
 		die( print_r( sqlsrv_errors(), true));
-	}
+    }
+    $options = array(
+        'soap_version'=> SOAP_1_1, 
+       'exceptions'=> true, 
+        'trace'=> 1,
+        'cache_wsdl'=> 0,
+    );
+      $client = new SoapClient($WSDL, $options);
+      if($client)
+      {
+      $obj = array('userID' => $UserID ,"chargeID"=>$chargeID);
+      $client->ChargeMoney($obj);
+      }
 }
+function PegarPacotes()
+{
+	global $conn;
+	$str = "select * from Pacotes";
+	$q = q($str);
+	while ($row = sqlsrv_fetch_array($q,SQLSRV_FETCH_ASSOC))
+	{
+		$pkt = new Pacote(null);
+		$pkt->ID = $row['ID'];
+		$pkt->Get();
+		echo $pkt->GetHTML();
+	}
 
+}
+function GetPicpayData($Refid,$PicpayToken)
+{
+$url = 'https://appws.picpay.com/ecommerce/public/payments/'.$Refid.'/status';
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    'X-Picpay-Token: ' . $PicpayToken
+]);
+$result = curl_exec($ch);
+curl_close($ch);
+return json_decode($result, true);
+}

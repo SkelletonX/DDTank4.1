@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 1);
+
 $conn                      = null;
 $c_host                    = 'SKELLETONX';
 $config['UID']             = 'sa';
@@ -15,33 +15,34 @@ $RateTimeToCoin  		   = 10; // Quantidade de coins por tempo online.
 #--------------------------------------------
 #--------------------------------------------
 #--------------------------------------------
+
 $LinkLogin				= 'http://127.0.0.1/';
 $LinkFlash				= 'http://127.0.0.1/flash/';
-$jogando				= 'DDTANKDev'; 
-$icon					= '';
-$titulo					= 'DDTANKDev';
-$description   			= 'Copyright © 2021 DDTANKDev Gamers. Todos os direitos reservados.';
+$jogando				= 'TankDev'; 
+$titulo					= 'TankDev';
+$description   			= 'Copyright © 2021 TankDev Todos os direitos reservados.';
 $KeyWords				= 'DDtank,4.1,original';
-$grupo					= '#'; 
+$pagina					= 'http://www.facebook.com/TankDev/';
+$WSDL					= 'http://127.0.0.1:2008/CenterService/?wsdl';
 #--------------------------------------------
 #--------------------------------------------
 #--------------------------------------------
+
 
 //add Functions
 include('function.php');
-co();
+
 //Add Clases
-include('./Models/index.php');
-#--------------------------------------------
-#--------------------------------------------
-#--------------------------------------------
+include('Models/index.php');
 
 #--------------------------------------------
 #--------------------------------------------
 #--------------------------------------------
 
-$Play[0]			= 'play.php'; //Play com Anuncio
-$Play[1]			= 'playvip.php'; //Play com Script
+#--------------------------------------------
+#--------------------------------------------
+#--------------------------------------------
 
-#-----------------------------------------
+co();
 @session_start();
+#-----------------------------------------
