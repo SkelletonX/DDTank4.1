@@ -11,7 +11,6 @@ $rd = rand(0,9999999).rand(0,9999999).uniqid();
 
 if(isset($_GET['key'])) {
     $k = $_GET['key'];
-	echo $k;
 	$custom = unserialize($_SESSION['UserData']);
 	echo '
 	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" class= id="7road-ddt-game"
