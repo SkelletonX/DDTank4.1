@@ -8,6 +8,9 @@
 # Build
 - Para compilar o projeto, você deve usar o Visual Studio 2019 com o .NET Framework 4.5.2.
 
+# Configurando
+- https://youtu.be/q1UoG-kd2lc
+
 # Info + 
 - Acesse a nossa [wiki aqui](https://github.com/SkelletonX/DDTank4.1/wiki)
 
