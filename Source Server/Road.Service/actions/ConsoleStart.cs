@@ -59,9 +59,9 @@ namespace Game.Service.actions
         public void OnAction(Hashtable parameters)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Title = "Road Server - DDtank True";
+            Console.Title = "Road Server - DDtank Dev";
             Console.WriteLine("-----------------------------------------");
-            Console.WriteLine("|| DDtank True                         ||");
+            Console.WriteLine("|| DDtank Dev                         ||");
             Console.WriteLine("|| Versão 4.1                          ||");
             Console.WriteLine("|| Data da Release:         {0} ||", File.GetLastWriteTime(Assembly.GetExecutingAssembly().Location).ToString("dd-MM-yyyy"));
             Console.WriteLine("-----------------------------------------");
