@@ -298,12 +298,7 @@ namespace Fighting.Server
                     VIPExpireDay = pkg.ReadDateTime()
 
                 }; 
-                Console.WriteLine("userVipInfo");
-                Console.WriteLine(userVipInfo.VIPLevel);
-                Console.WriteLine(userVipInfo.typeVIP);
-                Console.WriteLine(userVipInfo.VIPExpireDay);
-                Console.WriteLine(character.ID);
-
+               
                 UserMatchInfo matchInfo = new UserMatchInfo();
                 matchInfo.DailyLeagueFirst = pkg.ReadBoolean();
                 matchInfo.DailyLeagueLastScore = pkg.ReadInt();

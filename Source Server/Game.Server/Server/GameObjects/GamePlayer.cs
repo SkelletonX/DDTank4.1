@@ -1075,14 +1075,6 @@ namespace Game.Server.GameObjects
             this.m_character.typeVIP = this.SetTypeVIP(days);
             
         }
-        public void ContinuousVIP2(int days, DateTime ExpireDayOut)
-        {
-            int vipLevel = this.m_character.VIPLevel;
-
-                this.m_character.VIPExpireDay = ExpireDayOut;
-                this.m_character.typeVIP = this.SetTypeVIP(days);
-            
-        }
 
         public string ConverterPvePermission(char[] chArray)
         {
