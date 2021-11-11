@@ -305,7 +305,7 @@ z.value = v;
 <div class="ranking mt10 clearfix">
 	<h2 class="h2-tit">Facebook</h2>
 	<div class="widget">
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDDTankTrue%2F&tabs=timeline&width=259&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=172608803671801" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDDTDEV%2F&tabs=timeline&width=259&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=172608803671801" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </div>
 	<div class="">
 		<div class="">
