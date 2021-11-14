@@ -17,6 +17,9 @@
 # Membros do Projeto
 - **SKELLETONX**
 
+# Disocrd
+- https://discord.gg/sGdQHtA8HE
+
 <p align="center">
   <img src="https://i.imgur.com/JQ8Ssdb.jpg"/>
   </p>
