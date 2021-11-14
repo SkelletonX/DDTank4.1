@@ -70,7 +70,6 @@
     <Compile Include="Consortia.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="RoomSetupChangeAction.cs" />
-    <Compile Include="Server\GameObjects\RobotGamePlayer.cs" />
     <Compile Include="Server\GameServerConfig.cs" />
     <Compile Include="Server\LoginCrosszoneServerConnector.cs" />
     <Compile Include="Server\LoginServerConnector.cs" />
@@ -698,9 +697,6 @@
       <Project>{2d8435ff-7fe4-431b-b311-7abf9299bdaf}</Project>
       <Name>SqlDataProvider</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Server\Managers\RobotManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
