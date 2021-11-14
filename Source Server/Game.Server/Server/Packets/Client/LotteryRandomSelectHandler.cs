@@ -57,9 +57,8 @@ namespace Game.Server.Packets.Client
             client.Player.SendTCP(pkg);
             client.Player.RemoveLotteryItems(itemInfos[0].TemplateID, itemInfos[0].Count);
             client.Player.PropBag.RemoveTemplate(templateId, client.Player.Lottery);
-            client.Player.AddLog("Lottery", "LotteryID:" + (object) client.Player.LotteryID + "|ItemAward:" + (object) itemInfos[0].TemplateID + "|Name:" + itemInfos[0].Template.Name + "|CurrentCount:" + (object) client.Player.PropBag.GetItemCount(templateId));
             if (itemInfos[0].Template.Quality >= 4 && (itemInfos[0].Template.CategoryID == 7 || itemInfos[0].Template.CategoryID == 8 || (itemInfos[0].Template.CategoryID == 9 || itemInfos[0].Template.CategoryID == 13) || (itemInfos[0].Template.CategoryID == 15 || itemInfos[0].Template.CategoryID == 17 || itemInfos[0].Template.CategoryID == 14)))
-              GameServer.Instance.LoginServer.SendPacket(WorldMgr.SendSysNotice(eMessageType.ChatNormal, LanguageMgr.GetTranslation("LotteryRandomSelectHandler.Notice", (object) client.Player.PlayerCharacter.NickName, (object) str, (object) itemInfos[0].Template.Name), itemInfos[0].ItemID, itemInfos[0].TemplateID, (string) null));
+              GameServer.Instance.LoginServer.SendPacket(WorldMgr.SendSysNotice(eMessageType.ChatNormal, LanguageMgr.GetTranslation("Parabéns, você recebeu o item", (object) client.Player.PlayerCharacter.NickName, (object) str, (object) itemInfos[0].Template.Name), itemInfos[0].ItemID, itemInfos[0].TemplateID, (string) null));
           }
           else
             client.Player.SendMessage(LanguageMgr.GetTranslation("LotteryRandomSelectHandler.Error", (object) str));
