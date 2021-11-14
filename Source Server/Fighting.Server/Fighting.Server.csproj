@@ -45,6 +45,7 @@
     <Compile Include="FightServer.cs" />
     <Compile Include="FightServerConfig.cs" />
     <Compile Include="Games\Servers\ServerClient.cs" />
+    <Compile Include="Rooms\FakeRoomAction.cs" />
     <Compile Include="Rooms\RemoveRoomAction.cs" />
     <Compile Include="Rooms\AddRoomAction.cs" />
     <Compile Include="Rooms\IAction.cs" />

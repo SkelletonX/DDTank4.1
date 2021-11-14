@@ -162,7 +162,7 @@ namespace Game.Server.Packets.Client
                                         }
                                         else
                                         {
-                                            client.Player.ContinuousVIP2(itemInfo2.ValidDate, now);
+                                            client.Player.ContinuousVIP(itemInfo2.ValidDate, now);
                                             translateId2 = string.Format("O VIP foi renovado com sucesso por mais {0} dias!", (object)itemInfo2.ValidDate);
                                         }
                                         client.Out.SendOpenVIP(client.Player);

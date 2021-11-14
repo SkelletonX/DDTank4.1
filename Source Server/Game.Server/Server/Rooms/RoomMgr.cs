@@ -55,8 +55,11 @@ namespace Game.Server.Rooms
       RoomMgr.baseWaitingRoom_0 = new BaseWaitingRoom();
       return true;
     }
-
-    public static void Start()
+        public static void FakeRoom(string roomName, int playerCount, int maxPlayerCount, int roomType)
+        {
+          //  AddAction(new FakeRoomAction(roomName, playerCount, maxPlayerCount, roomType));
+        }
+        public static void Start()
     {
       if (RoomMgr.bool_0)
         return;
