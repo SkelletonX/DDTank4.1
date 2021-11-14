@@ -20,6 +20,9 @@
 # Disocrd
 - https://discord.gg/sGdQHtA8HE
 
+# Release Server
+- https://github.com/SkelletonX/DDTank4.1/releases
+
 <p align="center">
   <img src="https://i.imgur.com/JQ8Ssdb.jpg"/>
   </p>
