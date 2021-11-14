@@ -18,7 +18,6 @@ namespace Game.Server.Packets.Client
             int num2 = packet.ReadInt();
             int num3 = packet.ReadInt();
 
-            Console.WriteLine(num2);
 
             packet.ReadBoolean();
             PlayerInventory inventory = client.Player.GetInventory(eBageType);

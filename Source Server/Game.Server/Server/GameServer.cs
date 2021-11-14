@@ -47,6 +47,7 @@ namespace Game.Server
         protected Timer m_qqTipScanTimer;
         protected Timer m_saveDbTimer;
         protected Timer m_saveRecordTimer;
+        Update_Celeb Celeb = new Update_Celeb();
 
         protected GameServer(GameServerConfig config)
         {
@@ -86,6 +87,7 @@ namespace Game.Server
         {
             try
             {
+                Celeb.UpdateCeleb();
                 int tickCount = Environment.TickCount;
                 if (GameServer.log.IsInfoEnabled)
                 {
