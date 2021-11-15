@@ -1,0 +1,25 @@
+{
+    "name": "plustank",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "dist": "electron-builder",
+        "start": "electron main.js"
+    },
+    "author": "cipboy (github)",
+    "license": "MIT",
+    "build": {
+        "asar": false,
+        "productName": "PlusTank"
+    },
+    "devDependencies": {
+        "electron": "^9.0.4",
+        "electron-builder": "^22.7.0"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "jquery": "^3.5.1",
+        "md5": "^2.2.1"
+    }
+}

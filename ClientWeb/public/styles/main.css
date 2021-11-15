@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #03041d;
+    color: #e2e2e2;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .login-form, .splash {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    user-select: none;
+}
+
+.main .splash {
+    background: rgb(0,0,0);
+    background: linear-gradient(175deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(https://www.allthetests.com/quiz30/picture/pic_1385165268_5.jpg?1436189146);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.main .splash .brand img {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.main .splash .verssion {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.main .splash .mascote img {
+    position: absolute;
+    right: -70px;
+    bottom: 25px;
+    width: 250px;
+    transform: scaleX(-1);
+}
+
+.main .login-form #login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .login-form input {
+    width: 250px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1b1c33;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.main .login-form p {
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .85;
+}
+
+.main .login-form button {
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #38417f;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.main .login-form button:hover {
+    background-color: #387f5b;
+    transform: scaleY(1.1);
+}
+
+.main .login-form .form-group, .form-check {
+    margin: 10px;
+}
+
+.main .login-form .form-check {
+    display: flex;
+    width: 250px;
+}
+
+.main .login-form .form-check input {
+    width: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main .login-form .form-check p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main .login-form .footer p {
+    font-size: 14px;
+    width: 250px;
+    text-align: center;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+.main .login-form .footer a {
+    color: #b1b1b1;
+    transition: .5s all ease;
+}
+
+.main .login-form .footer a:hover {
+    color: #99ffbd;
+}
