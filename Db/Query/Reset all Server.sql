@@ -40,7 +40,6 @@ delete from Consortia_Apply_Ally
 delete from Consortia_Apply_Users
 delete from Consortia_Event
 delete from Consortia_Invite_Users
-delete from Consortia_Level
 delete from Consortia_Users
 
 -- DROP TABELA VIP_INFO2

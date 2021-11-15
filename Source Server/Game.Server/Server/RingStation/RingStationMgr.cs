@@ -117,7 +117,6 @@ namespace Game.Server.RingStation
 
     public static int GetAutoBot(GamePlayer player, int roomtype, int gametype)
     {
-            Console.WriteLine("GetBot");
             int playerId = RingStationConfiguration.NextPlayerID();
       BaseRoomRingStation room = new BaseRoomRingStation(RingStationConfiguration.NextRoomId());
       room.RoomType = roomtype;
