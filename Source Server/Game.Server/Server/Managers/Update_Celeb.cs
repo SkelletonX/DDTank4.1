@@ -21,11 +21,15 @@ namespace Game.Server.Managers
             }
             catch
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("[Update_Celeb] Error");
+                Console.ResetColor();
             }
         }
         public void UpdateCeleb()
         {
+
+            GameServer.log.Info((object)"UpdateCeleb Scaning ...");
             if (DateTime.Now.Minute > 5)
                 isuptop = false;
             if (DateTime.Now.Minute <= 5 && !isuptop)
