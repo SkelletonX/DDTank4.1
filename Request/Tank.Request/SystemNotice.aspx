@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SystemNotice.aspx.cs" Inherits="Tank.Request.SystemNotice" %>

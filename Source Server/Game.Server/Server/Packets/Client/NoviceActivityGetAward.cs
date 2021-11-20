@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Game.Server.Packets.Client.NoviceActivityGetAward
-// Assembly: Game.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 7994645F-6854-4AAC-A332-C61842D2DD9F
-// Assembly location: C:\Users\Pham Van Hungg\Desktop\Decompiler\Road\Game.Server.dll
-
-using Bussiness;
+﻿using Bussiness;
 using Bussiness.Managers;
 using Game.Base.Packets;
 using SqlDataProvider.Data;
@@ -23,7 +17,7 @@ namespace Game.Server.Packets.Client
       if (DateTime.Compare(client.Player.LastOpenCard.AddSeconds(1.5), DateTime.Now) > 0)
         return 0;
       bool isPlus = false;
-      string translateId = "NoviceActivityGetReward.Successfull";
+      string translateId = "Parabéns você completou o evento, verifique sua caixa de correio.";
       ProduceBussiness produceBussiness = new ProduceBussiness();
       EventRewardProcessInfo eventProcess = client.Player.Extra.GetEventProcess(num);
       List<SqlDataProvider.Data.ItemInfo> items = new List<SqlDataProvider.Data.ItemInfo>();
@@ -85,7 +79,7 @@ namespace Game.Server.Packets.Client
         if (awardGot != 999)
         {
           client.Player.Extra.UpdateEventCondition(num, eventRewardInfo.Condition, isPlus, awardGot);
-          client.Player.SendItemsToMail(items, LanguageMgr.GetTranslation("NoviceActivityGetAward.Content"), LanguageMgr.GetTranslation("NoviceActivityGetAward.Title"), eMailType.Manage);
+          client.Player.SendItemsToMail(items, LanguageMgr.GetTranslation("Parabéns você completou o evento"), LanguageMgr.GetTranslation("Premiação Evento"), eMailType.Manage);
         }
       }
       client.Player.Out.SendMessage(eMessageType.GM_NOTICE, LanguageMgr.GetTranslation(translateId));
