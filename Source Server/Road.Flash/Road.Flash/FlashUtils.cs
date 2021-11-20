@@ -60,6 +60,10 @@ namespace Road.Flash
 		{
 			return new XElement("Item", new XAttribute("ID", box.ID), new XAttribute("Type", box.Type), new XAttribute("Level", box.Level), new XAttribute("Condition", box.Condition), new XAttribute("TemplateID", box.TemplateID));
 		}
+		public static XElement CreateEventAward(EventAwardInfo Event)
+		{
+			return new XElement("Item", new XAttribute("ActivityType", Event.ActivityType), new XAttribute("Condition",1));
+		}
 
 		public static XElement CreateBallInfo(BallInfo b)
 		{

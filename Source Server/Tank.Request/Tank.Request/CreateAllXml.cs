@@ -16,6 +16,7 @@ namespace Tank.Request
 			{
 				StringBuilder stringBuilder = new StringBuilder();
 				stringBuilder.Append(ActiveList.Bulid(context));
+				stringBuilder.Append(EventAward.Bulid(context));
 				stringBuilder.Append(BallList.Bulid(context));
 				stringBuilder.Append(bombconfig.Bulid(context));
 				stringBuilder.Append(LoadMapsItems.Bulid(context));
