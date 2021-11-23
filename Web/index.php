@@ -14,12 +14,13 @@ if(isset($_POST['login']) && !isset($_SESSION['UserData']))
 	else
 	{
 		$user = addslashes($_POST['UserName']);
-		$pass = $_POST['Password'];
-		$UserInfo = new MemberData($user,$pass);
+		$p = $_POST['Password'];
+		$UserInfo = new MemberData($user,$p);
 		if($UserInfo->isAuthenticated())
 		{
 		getUserData($UserInfo);
 		$_SESSION['UserData'] = serialize($UserInfo);
+		$_SESSION['p'] = $p;
 		}
 		else
 		{
