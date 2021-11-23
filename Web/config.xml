@@ -4,7 +4,7 @@
     <FLASHSITE value="http://127.0.0.1/flash/" />
     <BACKUP_FLASHSITE value="http://127.0.0.1/flash/" />
     <USE_MD5 value="False" />
-    <SITE value="http://ddt-a.akamaihd.net/" />
+    <SITE value="http://127.0.0.1/Resource/" />
     <FIRSTPAGE value="http://127.0.0.1/" />
     <REGISTER value="http://127.0.0.1/" />
     <REQUEST_PATH value="http://127.0.0.1/request/" />
