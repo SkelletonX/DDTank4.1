@@ -1,0 +1,36 @@
+<Result value="true" message="Success!">
+  <Item id="1" name="Avaricia" descript="Incremento de {0}% en Exp Batalla, Oro en cartas" type="1" level="1" value="10" riches="1000" metal="0" pic="1" group="10" />
+  <Item id="2" name="Avaricia" descript="Incremento de {0}% en Exp Batalla, Oro en cartas" type="1" level="2" value="15" riches="3000" metal="0" pic="1" group="10" />
+  <Item id="3" name="Avaricia" descript="Incremento de {0}% en Exp Batalla, Oro en cartas" type="1" level="3" value="20" riches="5000" metal="0" pic="1" group="10" />
+  <Item id="4" name="Asalto" descript="Incremento de  Daño del {0}%" type="1" level="2" value="10" riches="1000" metal="0" pic="2" group="2" />
+  <Item id="5" name="Asalto" descript="Incremento de  Daño del {0}%" type="1" level="3" value="15" riches="3000" metal="0" pic="2" group="2" />
+  <Item id="6" name="Asalto" descript="Incremento de  Daño del {0}%" type="1" level="4" value="20" riches="5000" metal="0" pic="2" group="2" />
+  <Item id="7" name="Estallido potencial" descript="Incremento en {0}ptos de los atributos de Ataque, Defensa, Agilidad y Suerte" type="1" level="4" value="5" riches="1000" metal="0" pic="3" group="5" />
+  <Item id="8" name="Estallido potencial" descript="Incremento en {0}ptos de los atributos de Ataque, Defensa, Agilidad y Suerte" type="1" level="5" value="10" riches="3000" metal="0" pic="3" group="5" />
+  <Item id="9" name="Estallido potencial" descript="Incremento en {0}ptos de los atributos de Ataque, Defensa, Agilidad y Suerte" type="1" level="6" value="15" riches="5000" metal="0" pic="3" group="5" />
+  <Item id="10" name="Cuerpo de acero" descript="Incrementa el límite de Vida del nivel en {0}%" type="1" level="5" value="5" riches="1000" metal="0" pic="4" group="4" />
+  <Item id="11" name="Cuerpo de acero" descript="Incrementa el límite de Vida del nivel en {0}%" type="1" level="6" value="7" riches="3000" metal="0" pic="4" group="4" />
+  <Item id="12" name="Cuerpo de acero" descript="Incrementa el límite de Vida del nivel en {0}%" type="1" level="7" value="10" riches="5000" metal="0" pic="4" group="4" />
+  <Item id="13" name="Salud de toro" descript="Incremento de  Aguante del {0}%" type="1" level="7" value="1" riches="1000" metal="0" pic="5" group="7" />
+  <Item id="14" name="Salud de toro" descript="Incremento de  Aguante del {0}%" type="1" level="8" value="2" riches="3000" metal="0" pic="5" group="7" />
+  <Item id="15" name="Salud de toro" descript="Incremento de  Aguante del {0}%" type="1" level="10" value="3" riches="5000" metal="0" pic="5" group="7" />
+  <Item id="16" name="Saqueo" descript="Honor coseguido en batalla x{0}" type="1" level="8" value="2" riches="1000" metal="0" pic="6" group="9" />
+  <Item id="17" name="Saqueo" descript="Honor coseguido en batalla x{0}" type="1" level="9" value="3" riches="3000" metal="0" pic="6" group="9" />
+  <Item id="18" name="Avance" descript="Reduce la condición de las tareas diarias de Arena {0}, como mínimo a 1" type="2" level="1" value="1" riches="100" metal="8" pic="7" group="8" />
+  <Item id="19" name="Avance" descript="Reduce la condición de las tareas diarias de Arena {0}, como mínimo a 1" type="2" level="5" value="2" riches="300" metal="14" pic="7" group="8" />
+  <Item id="20" name="La mano de Dios" descript="El efecto de recuperación se incrementa en {0}ptos" type="2" level="2" value="100" riches="100" metal="8" pic="8" group="1" />
+  <Item id="21" name="La mano de Dios" descript="El efecto de recuperación se incrementa en {0}ptos" type="2" level="3" value="200" riches="300" metal="14" pic="8" group="1" />
+  <Item id="22" name="La mano de Dios" descript="El efecto de recuperación se incrementa en {0}ptos" type="2" level="6" value="300" riches="500" metal="20" pic="8" group="1" />
+  <Item id="23" name="Ataque mortal" descript="Incrementa el Daño por Crítico en {0}ptos" type="2" level="2" value="300" riches="100" metal="8" pic="9" group="3" />
+  <Item id="24" name="Ataque mortal" descript="Incrementa el Daño por Crítico en {0}ptos" type="2" level="4" value="400" riches="300" metal="14" pic="9" group="3" />
+  <Item id="25" name="Ataque mortal" descript="Incrementa el Daño por Crítico en {0}ptos" type="2" level="5" value="500" riches="500" metal="20" pic="9" group="3" />
+  <Item id="26" name="Cura Divina" descript="Incremento de restauración de vida del {0}% al usar artículos restauradores" type="2" level="3" value="10" riches="100" metal="8" pic="10" group="11" />
+  <Item id="27" name="Cura Divina" descript="Incremento de restauración de vida del {0}% al usar artículos restauradores" type="2" level="4" value="20" riches="300" metal="14" pic="10" group="11" />
+  <Item id="28" name="Cura Divina" descript="Incremento de restauración de vida del {0}% al usar artículos restauradores" type="2" level="6" value="30" riches="500" metal="20" pic="10" group="11" />
+  <Item id="29" name="Una daga tras la sonrisa" descript="Al atacar reduce la furia del enemigo un {0}%" type="2" level="7" value="5" riches="100" metal="8" pic="11" group="12" />
+  <Item id="30" name="Una daga tras la sonrisa" descript="Al atacar reduce la furia del enemigo un {0}%" type="2" level="8" value="7" riches="300" metal="14" pic="11" group="12" />
+  <Item id="31" name="Una daga tras la sonrisa" descript="Al atacar reduce la furia del enemigo un {0}%" type="2" level="9" value="10" riches="500" metal="20" pic="11" group="12" />
+  <Item id="32" name="Viento de Dios" descript="Reduce en {0}% el consumo de aguante al moverse" type="2" level="7" value="10" riches="100" metal="8" pic="12" group="6" />
+  <Item id="33" name="Viento de Dios" descript="Reduce en {0}% el consumo de aguante al moverse" type="2" level="8" value="30" riches="300" metal="14" pic="12" group="6" />
+  <Item id="34" name="Viento de Dios" descript="Reduce en {0}% el consumo de aguante al moverse" type="2" level="10" value="50" riches="500" metal="20" pic="12" group="6" />
+</Result>

@@ -7,6 +7,8 @@
 #----------------------------------------#
 include ('global.php');
 $rd = rand(0,9999999).rand(0,9999999).uniqid();
+
+
 if(isset($_GET['key'])) {
     $k = $_GET['key'];
 	$custom = unserialize($_SESSION['UserData']);

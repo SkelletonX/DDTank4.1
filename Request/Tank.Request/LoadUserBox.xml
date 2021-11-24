@@ -1,0 +1,22 @@
+<Result value="true" message="Success!">
+  <Item ID="1" Type="0" Level="20" Condition="15" TemplateID="1120090" />
+  <Item ID="2" Type="0" Level="20" Condition="40" TemplateID="1120091" />
+  <Item ID="3" Type="0" Level="20" Condition="60" TemplateID="1120092" />
+  <Item ID="4" Type="0" Level="20" Condition="75" TemplateID="1120093" />
+  <Item ID="6" Type="1" Level="4" Condition="1" TemplateID="1120071" />
+  <Item ID="7" Type="1" Level="5" Condition="1" TemplateID="1120072" />
+  <Item ID="8" Type="1" Level="8" Condition="1" TemplateID="1120073" />
+  <Item ID="9" Type="1" Level="10" Condition="1" TemplateID="1120074" />
+  <Item ID="10" Type="1" Level="11" Condition="1" TemplateID="1120075" />
+  <Item ID="11" Type="1" Level="12" Condition="1" TemplateID="1120076" />
+  <Item ID="12" Type="1" Level="15" Condition="1" TemplateID="1120077" />
+  <Item ID="13" Type="1" Level="20" Condition="1" TemplateID="1120078" />
+  <Item ID="14" Type="1" Level="4" Condition="0" TemplateID="1120081" />
+  <Item ID="15" Type="1" Level="5" Condition="0" TemplateID="1120082" />
+  <Item ID="16" Type="1" Level="8" Condition="0" TemplateID="1120083" />
+  <Item ID="17" Type="1" Level="10" Condition="0" TemplateID="1120084" />
+  <Item ID="18" Type="1" Level="11" Condition="0" TemplateID="1120085" />
+  <Item ID="19" Type="1" Level="12" Condition="0" TemplateID="1120086" />
+  <Item ID="20" Type="1" Level="15" Condition="0" TemplateID="1120087" />
+  <Item ID="21" Type="1" Level="20" Condition="0" TemplateID="1120088" />
+</Result>

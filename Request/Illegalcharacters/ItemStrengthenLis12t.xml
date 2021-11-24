@@ -1,0 +1,14 @@
+<Result value="true" message="Success!">
+  <Item StrengthenLevel="1" Rock="2" Rock1="2" Rock2="2" Rock3="2" StoneLevelMin="1" />
+  <Item StrengthenLevel="2" Rock="7" Rock1="7" Rock2="7" Rock3="7" StoneLevelMin="1" />
+  <Item StrengthenLevel="3" Rock="28" Rock1="28" Rock2="28" Rock3="28" StoneLevelMin="2" />
+  <Item StrengthenLevel="4" Rock="113" Rock1="113" Rock2="113" Rock3="113" StoneLevelMin="2" />
+  <Item StrengthenLevel="5" Rock="227" Rock1="227" Rock2="227" Rock3="227" StoneLevelMin="3" />
+  <Item StrengthenLevel="6" Rock="454" Rock1="454" Rock2="454" Rock3="454" StoneLevelMin="3" />
+  <Item StrengthenLevel="7" Rock="908" Rock1="908" Rock2="908" Rock3="908" StoneLevelMin="4" />
+  <Item StrengthenLevel="8" Rock="1816" Rock1="1816" Rock2="1816" Rock3="1816" StoneLevelMin="4" />
+  <Item StrengthenLevel="9" Rock="3692" Rock1="3692" Rock2="3692" Rock3="3692" StoneLevelMin="4" />
+  <Item StrengthenLevel="10" Rock="5430" Rock1="5430" Rock2="5430" Rock3="5430" StoneLevelMin="5" />
+  <Item StrengthenLevel="11" Rock="7287" Rock1="7287" Rock2="7287" Rock3="7287" StoneLevelMin="5" />
+  <Item StrengthenLevel="12" Rock="9079" Rock1="9079" Rock2="9079" Rock3="9079" StoneLevelMin="5" />
+</Result>
