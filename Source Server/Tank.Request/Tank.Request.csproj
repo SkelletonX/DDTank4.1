@@ -30,7 +30,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
-    <OutputPath>..\..\Request\bin\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
@@ -172,7 +171,6 @@
     <Compile Include="Tank.Request\dailyloglist.cs" />
     <Compile Include="Tank.Request\elitematchplayerlist.cs" />
     <Compile Include="Tank.Request\eServerUpdateType.cs" />
-    <Compile Include="Tank.Request\EventAward.cs" />
     <Compile Include="Tank.Request\eventrewarditemlist.cs" />
     <Compile Include="Tank.Request\ExitGameTransit.cs" />
     <Compile Include="Tank.Request\ExperienceRate.cs">

@@ -29,7 +29,7 @@ namespace Game.Server.Managers
         public void UpdateCeleb()
         {
 
-            GameServer.log.Info((object)"UpdateCeleb Scaning ...");
+            GameServer.log.Info("UpdateCeleb Scaning ...");
             if (DateTime.Now.Minute > 5)
                 isuptop = false;
             if (DateTime.Now.Minute <= 5 && !isuptop)

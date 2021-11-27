@@ -273,8 +273,6 @@ namespace Bussiness
             return achievementRewardInfoList.ToArray();
         }
 
-        
-
         public BallInfo[] GetAllBall()
         {
             List<BallInfo> ballInfoList = new List<BallInfo>();
@@ -1696,7 +1694,6 @@ namespace Bussiness
                     {
                         ID = (int)ResultDataReader["ID"],
                         ActivityType = (int)ResultDataReader["ActivityType"],
-                        EventAwardInfo = (int)ResultDataReader["EventAwardInfo"],
                         TemplateID = (int)ResultDataReader["TemplateID"],
                         Count = (int)ResultDataReader["Count"],
                         ValidDate = (int)ResultDataReader["ValidDate"],
