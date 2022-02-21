@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <config>
     <FLASHSITE value="http://127.0.0.1/flash/" />
     <BACKUP_FLASHSITE value="http://127.0.0.1/flash/" />
     <USE_MD5 value="False" />
-    <SITE value="http://127.0.0.1/Resource/" />
+    <SITE value="http://ddt-a.akamaihd.net/" />
     <FIRSTPAGE value="http://127.0.0.1/" />
     <REGISTER value="http://127.0.0.1/" />
-    <REQUEST_PATH value="http://127.0.0.1/request/" />
+    <REQUEST_PATH value="http://127.0.0.1/Request/" />
     <LOGIN_PATH value="http://127.0.0.1/" siteName="DDT" />
     <FILL_PATH value="http://bb.mail.ru/billing/payment" />
     <POLICY_FILES>
@@ -91,7 +91,7 @@
     <!--弹王盟约开关-->
     <KINGBLESS enable="true" />
     <!--任务托管 -->
-    <QUEST_TRUSTEESHIP enable="false" />
+    <QUEST_TRUSTEESHIP enable="true" />
     <!--勇士秘境开关-->
     <WARRIORS_FAM enable="true" />
     <!--战魂开关-->
@@ -107,18 +107,19 @@
     <!--小地图控制-->
     <SMALLMAP enable="true" meterEnable="false" borderEnable="false" alphaEnable="false" />
     <!--PK模式按钮-->
-    <PK_BTN enable="false" />
-    <VIP_DISCOUNT enable="false" />
-    <MAGICSTONE_DISCOUNT enable="false" />
+    <PK_BTN enable="true" />
+    <VIP_DISCOUNT enable="true" />
+    <MAGICSTONE_DISCOUNT enable="true" />
     <FIGHT_TIME count="1000" />
     <PETS_EAT enable="true" />
     <MAGICHOUSE enable="true" />
-    <GIRDATTEST enable="false" />
-    <GIRLHEAD enable="false" />
-    <TRUSTEESHIPVIEW enable="false" />
+    <GIRDATTEST enable="true" />
+    <GIRLHEAD enable="true" />
+    <TRUSTEESHIPVIEW enable="true" />
     <GODSYAH enable="true" />
     <LOGIN_DEVICE link="http://207.154.207.57/client/setup.exe" />
     <RECORD_PATH value="false" />
+	<fileversionflash value="key=road"/>
 </config>
 <update>
 <version from="204" to="205">
