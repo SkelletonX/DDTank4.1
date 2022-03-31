@@ -18,7 +18,7 @@
 - **SKELLETONX**
 
 # Disocrd
-- https://discord.gg/sGdQHtA8HE
+- https://discord.com/invite/4BRuPVV6bq
 
 # Release Server
 - https://github.com/SkelletonX/DDTank4.1/releases
