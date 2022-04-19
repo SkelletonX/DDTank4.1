@@ -1,4 +1,7 @@
 <?php
+
+sqlsrv_configure('WarningsReturnAsErrors',0);
+
 function co()
 {
 	global $conn,$config,$c_host;
