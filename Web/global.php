@@ -1,7 +1,7 @@
 <?php
 
 $conn                      = null;
-$c_host                    = 'SKELLETONX';
+$c_host                    = 'SUELEN\SKELLETONX';
 $config['UID']             = 'sa';
 $config['PWD']             = '123456';
 $config['Database']        = 'Db_Membership';
@@ -20,7 +20,7 @@ $LinkLogin				= 'http://127.0.0.1/';
 $LinkFlash				= 'http://127.0.0.1/flash/';
 $jogando				= 'TankDev'; 
 $titulo					= 'TankDev';
-$description   			= 'Copyright © 2021 TankDev Todos os direitos reservados.';
+$description   			= 'Copyright © 2022 TankDev Todos os direitos reservados.';
 $KeyWords				= 'DDtank,4.1,original';
 $pagina					= 'http://www.facebook.com/TankDev/';
 $WSDL					= 'http://127.0.0.1:2008/CenterService/?wsdl';
