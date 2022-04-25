@@ -11,9 +11,6 @@ namespace Game.Server.Packets.Client
   [PacketHandler(257, "Skip new player tutorial")]
   public class SkipNewPlayerHandler : IPacketHandler
   {
-    public int HandlePacket(GameClient client, GSPacketIn packet)
-    {
-      return 1;
+     public int HandlePacket(GameClient client, GSPacketIn packet) => 1;
     }
-  }
 }

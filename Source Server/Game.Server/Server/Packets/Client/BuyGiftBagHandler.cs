@@ -16,9 +16,9 @@ namespace Game.Server.Packets.Client
   {
     public int HandlePacket(GameClient client, GSPacketIn packet)
     {
-      /*
+      
       packet.ReadInt();
-      int num = 4500;
+      int num = 6500; //4500 default
       packet.ReadBoolean();
       if (client.Player.PlayerCharacter.HasBagPassword && client.Player.PlayerCharacter.IsLocked)
       {
@@ -44,7 +44,7 @@ namespace Game.Server.Packets.Client
           client.Player.AddTemplate(fromTemplate5);
         client.Player.RemoveMoney(num);
         client.Out.SendMessage(eMessageType.GM_NOTICE, "A compra foi bem sucedida.!");
-      }*/
+      }
       return 0;
     }
   }
