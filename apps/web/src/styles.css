@@ -1,0 +1,8 @@
+@import url('/Web/Assets/css/ddt-index.css');
+@import url('/Web/Assets/css/ddt-reset.css');
+@import url('/Web/Assets/css/ddt-style.css');
+@import url('/Web/Assets/bootstrap/3.3.7/css/dbootstrap.min.css');
+@import url('/Web/Assets/js/clearbox/css/cb_style.css');
+@import url('/Web/Assets/js/footer/css/footer.css');
+
+/* Vue-specific overrides only. Legacy page styles stay untouched. */

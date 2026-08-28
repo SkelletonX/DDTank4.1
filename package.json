@@ -1,0 +1,11 @@
+{
+  "name": "ddtank-modern",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @dd/web dev",
+    "dev:api": "pnpm --filter @dd/api dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
